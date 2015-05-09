@@ -1,0 +1,38 @@
+{
+  "name": "destiny-api",
+  "version": "1.0.0",
+  "description": "Destiny API through bungie.net",
+  "main": "index.js",
+  "scripts": {
+    "100%": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "test": "mocha test.js",
+    "watch": "mocha --watch test.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js"
+  },
+  "keywords": [
+    "bungie",
+    "destiny",
+    "api"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "Private",
+  "dependencies": {
+    "async": "0.9.x",
+    "cookie": "0.1.x",
+    "emits": "3.0.x",
+    "eventemitter3": "0.1.x",
+    "extendible": "0.1.x",
+    "failure": "1.0.x",
+    "millisecond": "0.0.x",
+    "modification": "1.0.x",
+    "pathval": "0.1.x",
+    "url-parse": "1.0.x"
+  },
+  "devDependencies": {
+    "assume": "1.2.x",
+    "istanbul": "0.3.x",
+    "mocha": "2.2.4",
+    "pre-commit": "1.0.x"
+  }
+}
