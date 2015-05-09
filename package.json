@@ -16,7 +16,7 @@
     "api"
   ],
   "author": "Arnout Kazemier",
-  "license": "Private",
+  "license": "MIT",
   "dependencies": {
     "async": "0.9.x",
     "cookie": "0.1.x",
