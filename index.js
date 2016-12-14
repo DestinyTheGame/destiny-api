@@ -4,7 +4,6 @@ var EventEmitter = require('eventemitter3')
   , modification = require('modification')
   , pathval = require('pathval')
   , URL = require('url-parse')
-  , cookie = require('cookie')
   , fail = require('failure')
   , async = require('async');
 
@@ -15,30 +14,27 @@ var EventEmitter = require('eventemitter3')
  *
  * - api:       Location of the API server that we're requesting.
  * - key:       Bungie API key.
- * - csrf:      Bungie CSRF key for authentication.
  * - platform:  Platform (console) that we're using.
  * - username:  Username of your account.
  * - timeout:   Maximum request timeout.
- * - cookie:    The Bungie.net cookies.
  * - ttl:       Time to live for the vault so items are continuously updated
  *              before interaction.
  *
  * @constructor
+ * @param {Bungie} bungie The bungie-auth instance.
  * @param {Object} options Configuration.
  * @api public
  */
-function Destiny(options) {
-  if (!this) return new Destiny(options);
+function Destiny(bungie, options) {
+  if (!this) return new Destiny(bungie, options);
 
-  this.key = '';
   this.api = 'https://www.bungie.net/Platform/';
+  this.bungie = bungie;
   this.timeout = 30000;
 
   this.characters = []; // Available characters.
   this.platform = '';   // Console that is used.
   this.username = '';   // Bungie username.
-  this.cookie = '';     // Bungie cookie string or parsed object.
-  this.csrf = '';       // Bungie bungled value.
   this.id = '';         // Bungie membership id.
 
   this.change(options || {});
@@ -76,11 +72,9 @@ Destiny.prototype.initialize = function initialize() {
       characters: [],
       platform: '',
       username: '',
-      csrf: '',
       id: ''
     };
 
-    if (hard) props.cookie = '';
     this.change(props);
   });
 
@@ -94,21 +88,12 @@ Destiny.prototype.initialize = function initialize() {
 /**
  * Refresh all our chars and internal settings.
  *
- * @param {String} bungiecookie Refresh our characters.
  * @api private
  */
-Destiny.prototype.refresh = function refresh(bungiecookie) {
+Destiny.prototype.refresh = function refresh() {
   var destiny = this;
 
   destiny.change({ readystate: Destiny.LOADING }).emit('refresh');
-
-  //
-  // If a new cookie has been received we should parse it again.
-  //
-  if (bungiecookie) destiny.change({ cookie: bungiecookie });
-  if ('string' === typeof destiny.cookie) {
-    destiny.csrf = cookie.parse(destiny.cookie).bungled;
-  }
 
   //
   // We need to pre-gather all the information from the Bungie API.
@@ -207,13 +192,8 @@ Destiny.prototype.send = function send(options, fn) {
   }, options || {});
 
   url =  using.url instanceof URL ? using.url : this.format(using.url);
+
   xhr.open(using.method, url.href, true);
-
-  xhr.setRequestHeader('x-csrf', this.csrf);
-  xhr.setRequestHeader('cookie', this.cookie);
-  xhr.setRequestHeader('X-API-Key', this.key);
-  xhr.setRequestHeader('x-requested-with', 'XMLHttpRequest');
-
   xhr.timeout = this.timeout;
 
   xhr.onload = function onload() {
@@ -266,7 +246,18 @@ Destiny.prototype.send = function send(options, fn) {
     fn(undefined, pathval.get(data.Response, using.filter));
   };
 
-  xhr.send(using.body);
+  //
+  // Retrieve the token from our bungie-auth instance so we can access the
+  // secured API's
+  //
+  this.bungie.token(function token(err, payload) {
+    xhr.setRequestHeader('X-API-Key', this.bungie.config.key);
+    xhr.setRequestHeader('x-requested-with', 'XMLHttpRequest');
+    xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
+
+    xhr.send(using.body);
+  });
+
   return this;
 };
 
