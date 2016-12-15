@@ -25,8 +25,9 @@
     "failure": "1.1.x",
     "millisecond": "0.1.x",
     "modification": "1.0.x",
-    "pathval": "1.1.x",
-    "url-parse": "1.1.x"
+    "propget": "1.0.0",
+    "url-parse": "1.1.x",
+    "xmlhttprequest": "1.8.0"
   },
   "devDependencies": {
     "assume": "1.4.x",
