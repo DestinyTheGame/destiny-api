@@ -2,10 +2,10 @@ import CharacterEndpoint from './endpoints/character';
 import UserEndpoint from './endpoints/user';
 import EventEmitter from 'eventemitter3';
 import modification from 'modification';
+import series from 'async/series';
 import failure from 'failure';
 import URL from 'url-parse';
 import prop from 'propget';
-import async from 'async';
 import emits from 'emits';
 
 /**
@@ -92,11 +92,11 @@ export default class Destiny extends EventEmitter {
     //
     // We need to pre-gather all the information from the Bungie API.
     //
-    async.series([
+    series({
       //
       // Phase 1: Get the platform and username from the API.
       //
-      (next) => {
+      user: (next) => {
         this.user.get(next);
       },
 
@@ -104,15 +104,23 @@ export default class Destiny extends EventEmitter {
       // Phase 2: Now that we've successfully received our user information
       // we're ready to process API calls so we set our readyState to complete.
       //
-      (next) => {
-        this.change({ readystate: Destiny.COMPLETE });
-        next();
+      readystate: (next) => {
+        this.user.membership(this.platform, this.username, (err, data) => {
+          if (err) return next(err);
+
+          this.change({
+            readystate: Destiny.COMPLETE,
+            id: data
+          });
+
+          next();
+        });
       },
 
       //
       // Phase 3: Get all characters for the given membership id.
       //
-      (next) => {
+      account: (next) => {
         this.user.account(this.platform, this.id, (err, data) => {
           if (err) return next(err);
 
@@ -125,7 +133,7 @@ export default class Destiny extends EventEmitter {
           next();
         });
       }
-    ], (err) => {
+    }, (err) => {
       if (err) return this.emit('error', failure(err, {
         reason: 'Failed to retrieve account information from the Bungie API',
         action: 'login'
@@ -264,6 +272,15 @@ export default class Destiny extends EventEmitter {
     if (set) Object.keys(set).forEach(function each(key) {
       url.set(key, set[key]);
     });
+
+    //
+    // Final check, we need to make sure that the pathname has a leading slash
+    // so we don't have to follow potential redirects as all documented API
+    // calls have the leading slash.
+    //
+    if (url.pathname.charAt(url.pathname.length - 1) !== '/') {
+      url.set('pathname', url.pathname + '/');
+    }
 
     return url;
   }
