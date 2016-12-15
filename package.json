@@ -37,6 +37,7 @@
     "mocha": "3.2.x",
     "pre-commit": "1.2.x"
   },
+  "babel-ignore": false,
   "babel": {
     "presets": [
       "babel-preset-es2015"
