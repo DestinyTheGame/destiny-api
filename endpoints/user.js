@@ -33,19 +33,17 @@ export default class User {
       //
       if (data.psnId) {
         this.destiny.change({
-          id: data.user.membershipId,
           username: data.psnId,
           platform: 'PlayStation'
         });
       } else if (data.gamerTag) {
         this.destiny.change({
-          id: data.user.membershipId,
           username: data.gamerTag,
           platform: 'Xbox'
         });
       }
 
-      fn.apply(this, arguments);
+      fn.call(this, undefined, data);
     });
   }
 
@@ -57,9 +55,9 @@ export default class User {
    * @param {Function} fn Completion callback.
    * @api public
    */
-  search(platform, username, fn) {
+  membership(platform, username, fn) {
     return this.destiny.send({
-      url: ['Destiny', 'SearchDestinyPlayer', this.destiny.console(platform), username],
+      url: ['Destiny', this.destiny.console(platform), 'Stats', 'GetMembershipIdByDisplayName', username],
       method: 'GET',
       bypass: true
     }, fn);
