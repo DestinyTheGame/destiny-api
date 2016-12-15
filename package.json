@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "100%": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
-    "test": "mocha test.js",
+    "test": "mocha --compilers js:babel-register test.js",
     "watch": "mocha --watch test.js",
     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js"
@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "0.9.x",
+    "babel-preset-es2015": "6.18.x",
     "emits": "3.0.x",
     "eventemitter3": "2.0.x",
     "extendible": "0.1.x",
@@ -31,8 +32,14 @@
   },
   "devDependencies": {
     "assume": "1.4.x",
+    "babel-register": "6.18.x",
     "istanbul": "0.4.x",
     "mocha": "3.2.x",
     "pre-commit": "1.2.x"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-es2015"
+    ]
   }
 }
