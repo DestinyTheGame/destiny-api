@@ -18,13 +18,11 @@ export default class User {
    * @api public
    */
   get(fn) {
-    var destiny = this.destiny;
-
-    return destiny.send({
+    return this.destiny.send({
       url: ['User', 'GetBungieNetUser'],
       method: 'GET',
       bypass: true
-    }, function completion(err, data) {
+    }, (err, data) => {
       if (err || !data) {
         return fn(err || new Error('Failed to lookup user, no details returned'));
       }
@@ -34,12 +32,14 @@ export default class User {
       // user information for the given API key as the API key here is leading.
       //
       if (data.psnId) {
-        destiny.change({
+        this.destiny.change({
+          id: data.user.membershipId,
           username: data.psnId,
           platform: 'PlayStation'
         });
       } else if (data.gamerTag) {
-        destiny.change({
+        this.destiny.change({
+          id: data.user.membershipId,
           username: data.gamerTag,
           platform: 'Xbox'
         });
