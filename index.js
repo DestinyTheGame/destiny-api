@@ -1,3 +1,5 @@
+import CharacterEndpoint from './endpoints/character';
+import UserEndpoint from './endpoints/user';
 import EventEmitter from 'eventemitter3';
 import modification from 'modification';
 import failure from 'failure';
@@ -36,11 +38,11 @@ export default class Destiny extends EventEmitter {
 
     this.api = 'https://www.bungie.net/Platform/';
 
-    this.timeout = 30000; // API timeout.
-    this.characters = []; // Available characters.
-    this.platform = '';   // Console that is used.
-    this.username = '';   // Bungie username.
-    this.id = '';         // Bungie membership id.
+    this.timeout = 30000;   // API timeout.
+    this.characters = [];   // Available characters.
+    this.platform = '';     // Console that is used.
+    this.username = '';     // Bungie username.
+    this.id = '';           // Bungie membership id.
 
     this.change(options);
 
@@ -99,19 +101,12 @@ export default class Destiny extends EventEmitter {
       },
 
       //
-      // Phase 2: Get the membership id for the username.
+      // Phase 2: Now that we've successfully received our user information
+      // we're ready to process API calls so we set our readyState to complete.
       //
       (next) => {
-        this.user.search(this.platform, this.username, (err, data) => {
-          if (err) return next(err);
-
-          this.change({
-            readystate: Destiny.COMPLETE,
-            id: data[0].membershipId
-          });
-
-          next();
-        });
+        this.change({ readystate: Destiny.COMPLETE });
+        next();
       },
 
       //
@@ -238,7 +233,7 @@ export default class Destiny extends EventEmitter {
     this.bungie.token((err, payload) => {
       if (err) return fn(err);
 
-      xhr.setRequestHeader('X-API-Key', destiny.bungie.config.key);
+      xhr.setRequestHeader('X-API-Key', this.bungie.config.key);
       xhr.setRequestHeader('x-requested-with', 'XMLHttpRequest');
       xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
 
@@ -323,8 +318,8 @@ Destiny.define = function define(name, fn) {
 // Add the lazy loaded API endpoint initialization.
 //
 [
-  { name: 'user', Endpoint: require('./endpoints/user.js') },
-  { name: 'character', Endpoint: require('./endpoints/character.js') }
+  { name: 'user', Endpoint: UserEndpoint },
+  { name: 'character', Endpoint: CharacterEndpoint }
 ].forEach(function each(spec) {
   Destiny.define(spec.name, function defined() {
     return new spec.Endpoint(this);
