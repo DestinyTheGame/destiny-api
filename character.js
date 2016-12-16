@@ -1,27 +1,27 @@
-'use strict';
+/**
+ * Representation of one of our Destiny characters.
+ *
+ * @constructor
+ * @param {Destiny} destiny Reference to our Destiny API instance.
+ * @param {Object} data Character information.
+ * @private
+ */
+export default class Character {
+  constructor(destiny, data) {
+    var base = data.characterBase;
 
-function Character(destiny, data) {
-  var base = data.characterBase;
+    this.destiny = destiny;
+    this.id = base.id;
+  }
 
-  this.destiny = destiny;
-  this.id = base.id;
-
-  //
-  // @see https://gist.github.com/aFreshMelon/9c4eb1f64d57b9f1cbf7 for resposnes
-  //
-
-  //
-  // Generate a proxy method for the following API methods as we can pre-bind
-  // the API calls with the correct character id.
-  //
-  [
-    'main', 'inventory', 'activities', 'progression'
-  ].forEach(function generate(method) {
-    this[method] = destiny.character[method].bind(destiny.character, this.id);
-  }, this);
+  /**
+   * Request the current inventory of the character.
+   *
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  inventory(fn) {
+    const { id, platform, character } = this.destiny
+    return character.inventory(platform, id, this.id, fn);
+  }
 }
-
-//
-// Expose the interface.
-//
-module.exports = Character;

@@ -64,14 +64,12 @@ export default class Destiny extends EventEmitter {
    */
   initialize() {
     this.on('refresh', function reset(hard) {
-      var props = {
+      this.change({
         characters: [],
         platform: '',
         username: '',
         id: ''
-      };
-
-      this.change(props);
+      });
     });
 
     //
@@ -162,7 +160,7 @@ export default class Destiny extends EventEmitter {
     // Check if we're allowed to make these http requests yet or if they require
     // login or additional account information.
     //
-    if (!options.bypass && this.readystate !== Destiny.COMPLETE) {
+    if (this.readystate !== Destiny.COMPLETE) {
       return this.once('refreshed', function refreshed(err) {
         if (err) return fn(err);
 
@@ -170,13 +168,21 @@ export default class Destiny extends EventEmitter {
         // Re-call the `send` method so we can process this outgoing HTTP request
         // as all information has been gathered from the required API endpoints.
         //
-        send.call(this, options, fn);
+        this.send(options, fn);
       });
     }
 
+    //
+    // Setup the XHR request with the correct formatted URL.
+    //
     const xhr = new this.XHR();
+    const format = options.format || {};
     const using = Object.assign({ method: 'GET' }, options || {});
-    const url =  using.url instanceof URL ? using.url : this.format(using.url);
+    const url =  this.format(using.url, Object.assign({
+      displayName: format.displayName || this.username,
+      destinyMembershipId: format.destinyMembershipId || this.id,
+      membershipType: format.membershipType || this.console()
+    }, format));
 
     xhr.open(using.method, url.href, true);
     xhr.timeout = this.timeout;
@@ -192,7 +198,7 @@ export default class Destiny extends EventEmitter {
         }));
       }
 
-      var data = xhr.response || xhr.responseText;
+      let data = xhr.response || xhr.responseText;
 
       try { data = JSON.parse(data); }
       catch (e) {
@@ -255,23 +261,23 @@ export default class Destiny extends EventEmitter {
    * Simple yet effective URL formatter.
    *
    * @param {String|Array} endpoint The API endpoint that we're trying to hit.
-   * @param {Object} set An object with props that should be overridden in the URL
+   * @param {Object} data Additional data that needs to be transformed.
    * @returns {URL} Created URL instance.
    * @api public
    */
-  format(endpoint, set) {
+  format(endpoint, data) {
     endpoint = Array.isArray(endpoint) ? endpoint.join('/') : endpoint;
 
-    var url = new URL(
-      (this.api + endpoint)
-      .replace('{id}', this.id)
-      .replace('{username}', this.username)
-      .replace('{platform}', this.console())
-    );
+    //
+    // Replace our template or "place holders" with our supplied data.
+    //
+    let api = this.api + endpoint;
 
-    if (set) Object.keys(set).forEach(function each(key) {
-      url.set(key, set[key]);
-    });
+    for(let prop in data) {
+      api = api.replace(new RegExp('{'+ prop +'}','g'), data[prop]);
+    }
+
+    const url = new URL(api);
 
     //
     // Final check, we need to make sure that the pathname has a leading slash
@@ -314,7 +320,7 @@ export default class Destiny extends EventEmitter {
  * @api private
  */
 Destiny.define = function define(name, fn) {
-  var where = this.prototype;
+  const where = this.prototype;
 
   Object.defineProperty(where, name, {
     configurable: true,

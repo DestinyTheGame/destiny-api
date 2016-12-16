@@ -3,7 +3,7 @@
  *
  * @constructor
  * @param {Destiny} destiny Reference to the destiny API.
- * @api private
+ * @private
  */
 export default class User {
   constructor(destiny) {
@@ -15,14 +15,10 @@ export default class User {
    *
    * @param {Function} fn Completion callback
    * @returns {Destiny} Original API.
-   * @api public
+   * @public
    */
   get(fn) {
-    return this.destiny.send({
-      url: ['User', 'GetBungieNetUser'],
-      method: 'GET',
-      bypass: true
-    }, (err, data) => {
+    return this.destiny.send({ url: 'User/GetBungieNetUser/' }, (err, data) => {
       if (err || !data) {
         return fn(err || new Error('Failed to lookup user, no details returned'));
       }
@@ -48,18 +44,72 @@ export default class User {
   }
 
   /**
+   * Fetch list of available avatars for user.
+   *
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  avatars() {
+    return this.destiny.send({ url: 'User/GetAvailableAvatars/' }, fn);
+  }
+
+  /**
+   * Fetch list of available themes for user.
+   *
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  themes() {
+    return this.destiny.send({ url: 'User/GetAvailableThemes/' }, fn);
+  }
+
+  /**
+   * Loads a bungie.net user by membership id.
+   *
+   * @param {String} membershipId membershipId of the users we're looking for.
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  id(membershipId) {
+    return this.destiny.send({
+      url: 'User/GetBungieNetUserById/{id}/',
+      format: {
+        id: membershipId
+      }
+    }, fn);
+  }
+
+  /**
+   * Loads a bungie.net user by membership id.
+   *
+   * @param {String} membershipId membershipId of the users we're looking for.
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  search(username, fn) {
+    return this.destiny.send({
+      url: 'User/SearchUsers/?q={search}'
+      format: {
+        search: username
+      }
+    }, fn);
+  }
+
+  /**
    * For the users's Bungie membership id.
    *
    * @param {String|Number} platform The platform type.
    * @param {String} username Username we want to lookup.
    * @param {Function} fn Completion callback.
-   * @api public
+   * @public
    */
   membership(platform, username, fn) {
     return this.destiny.send({
-      url: ['Destiny', this.destiny.console(platform), 'Stats', 'GetMembershipIdByDisplayName', username],
-      method: 'GET',
-      bypass: true
+      url: 'Destiny/{membershipType}/Stats/GetMembershipIdByDisplayName/{displayName}/',
+      format: {
+        membershipType: this.destiny.console(platform),
+        displayName: username
+      }
     }, fn);
   }
 
@@ -69,14 +119,33 @@ export default class User {
    * @param {String|Number} platform The platform type.
    * @param {String} id Account id.
    * @param {Function} fn Completion callback.
-   * @api public
+   * @public
    */
   account(platform, id, fn) {
     return this.destiny.send({
-      url: ['Destiny', this.destiny.console(platform, true), 'Account', id],
-      filter: 'data',
-      method: 'GET',
-      bypass: true
+      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Summary/',
+      format: {
+        membershipType: this.destiny.console(platform),
+        destinyMembershipId: id
+      }
+    }, fn);
+  }
+
+  /**
+   * Lookup advisor information for the given account.
+   *
+   * @param {String|Number} platform The platform type.
+   * @param {String} id Account id.
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  advisors(platform, id, fn) {
+    return this.destiny.send({
+      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Advisors/'
+      format: {
+        destinyMembershipType: this.destiny.console(platform, true),
+        destinyMembershipId: id
+      }
     }, fn);
   }
 }

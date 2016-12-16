@@ -1,31 +1,73 @@
-import Endpoint from '../endpoint';
-
 /**
  * API endpoint to manipulate and interact with your destiny character.
  *
  * @constructor
  * @param {Destiny} destiny Reference to the destiny API.
- * @api private
- */
-export default class Character extends Endpoint {
-  constructor() {
-    super(...arguments);
-
-    this.base = 'Destiny/{platform}/Account/{id}/Character/';
-    this.generate(Character.specification)
-  }
-}
-
-/**
- * Generate the following API methods which should request the given suffix
- * API's
- *
- * @type {Object}
  * @private
  */
-Character.specification = {
-  main: '',
-  inventory: 'Inventory',
-  activities: 'Activities',
-  progression: 'Progression'
-};
+export default class Character {
+  constructor(destiny) {
+    this.destiny;
+  }
+
+  /**
+   * Retrieve inventory for a given character.
+   *
+   * @param {String|Number} platform The platform type.
+   * @param {String} id Destiny id
+   * @param {string} char Character id.
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  inventory(platform, id, char, fn) {
+    return this.destiny.send({
+      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Inventory/Summary/'
+      format: {
+        membershipType: this.destiny.console(platform),
+        destinyMembershipId: id,
+        characterId: char
+      }
+    }, fn);
+  }
+
+  /**
+   * Retrieve activity history for a given character.
+   *
+   * @param {String|Number} platform The platform type.
+   * @param {String} id Destiny id
+   * @param {string} char Character id.
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  history(platform, id, char, fn) {
+    return this.destiny.send({
+      url: 'Destiny/Stats/ActivityHistory/{membershipType}/{destinyMembershipId}/{characterId}/',
+      format: {
+        membershipType: this.destiny.console(platform),
+        destinyMembershipId: id,
+        characterId: char
+      }
+    }, fn);
+  }
+
+  /**
+   * Retrieve activity history for a given character.
+   *
+   * @param {String|Number} platform The platform type.
+   * @param {String} id Destiny id
+   * @param {string} char Character id.
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  history(platform, id, char, fn) {
+    return this.destiny.send({
+      url: 'Destiny/Stats/ActivityHistory/{membershipType}/{destinyMembershipId}/{characterId}/',
+      format: {
+        membershipType: this.destiny.console(platform),
+        destinyMembershipId: id,
+        characterId: char
+      }
+    }, fn);
+  }
+
+}
