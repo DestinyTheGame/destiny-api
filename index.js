@@ -1,5 +1,3 @@
-import CharacterEndpoint from './endpoints/character';
-import UserEndpoint from './endpoints/user';
 import EventEmitter from 'eventemitter3';
 import modification from 'modification';
 import series from 'async/series';
@@ -7,6 +5,18 @@ import failure from 'failure';
 import URL from 'url-parse';
 import prop from 'propget';
 import emits from 'emits';
+
+//
+// Import our actual API endpoints.
+//
+import CharacterEndpoint from './endpoints/character';
+import UserEndpoint from './endpoints/user';
+
+//
+// Import various of models.
+//
+import Character from './character';
+import Vault from './vault';
 
 /**
  * Destiny API interactions.
@@ -51,7 +61,7 @@ export default class Destiny extends EventEmitter {
     //
     this.bungie = bungie;
     this.readystate = Destiny.CLOSED;
-    this.vault = new Destiny.Vault(this, options.ttl || '5 minutes');
+    this.vault = Vault(this, options.ttl || '5 minutes');
     this.XHR = options.XHR || global.XMLHttpRequest;
 
     this.initialize();
@@ -124,7 +134,7 @@ export default class Destiny extends EventEmitter {
 
           if (data.characters) this.change({
             characters: data.characters.map((data) => {
-              return new Destiny.Character(this, data);
+              return new Character(this, data);
             })
           });
 
@@ -132,6 +142,7 @@ export default class Destiny extends EventEmitter {
         });
       }
     }, (err) => {
+      console.log('done');
       if (err) return this.emit('error', failure(err, {
         reason: 'Failed to retrieve account information from the Bungie API',
         action: 'login'
@@ -160,7 +171,7 @@ export default class Destiny extends EventEmitter {
     // Check if we're allowed to make these http requests yet or if they require
     // login or additional account information.
     //
-    if (this.readystate !== Destiny.COMPLETE) {
+    if (!options.bypass && this.readystate !== Destiny.COMPLETE) {
       return this.once('refreshed', function refreshed(err) {
         if (err) return fn(err);
 
@@ -348,15 +359,6 @@ Destiny.define = function define(name, fn) {
     return new spec.Endpoint(this);
   });
 });
-
-/**
- * Expose our internal classes so they can be extended at will.
- *
- * @type {Function}
- * @public
- */
-Destiny.Vault = require('./vault');
-Destiny.Character = require('./character');
 
 //
 // Internal ready state..
