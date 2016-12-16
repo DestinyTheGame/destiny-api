@@ -21,7 +21,7 @@ export default class Character {
    */
   inventory(platform, id, char, fn) {
     return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Inventory/Summary/'
+      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Inventory/Summary/',
       format: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id,

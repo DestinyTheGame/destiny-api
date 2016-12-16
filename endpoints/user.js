@@ -18,7 +18,10 @@ export default class User {
    * @public
    */
   get(fn) {
-    return this.destiny.send({ url: 'User/GetBungieNetUser/' }, (err, data) => {
+    return this.destiny.send({
+      url: 'User/GetBungieNetUser/',
+      bypass: true
+    }, (err, data) => {
       if (err || !data) {
         return fn(err || new Error('Failed to lookup user, no details returned'));
       }
@@ -29,12 +32,12 @@ export default class User {
       //
       if (data.psnId) {
         this.destiny.change({
-          username: data.psnId,
+          username: data.user.displayName,
           platform: 'PlayStation'
         });
       } else if (data.gamerTag) {
         this.destiny.change({
-          username: data.gamerTag,
+          username: data.user.displayName,
           platform: 'Xbox'
         });
       }
@@ -88,7 +91,7 @@ export default class User {
    */
   search(username, fn) {
     return this.destiny.send({
-      url: 'User/SearchUsers/?q={search}'
+      url: 'User/SearchUsers/?q={search}',
       format: {
         search: username
       }
@@ -106,6 +109,7 @@ export default class User {
   membership(platform, username, fn) {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Stats/GetMembershipIdByDisplayName/{displayName}/',
+      bypass: true,
       format: {
         membershipType: this.destiny.console(platform),
         displayName: username
@@ -124,6 +128,8 @@ export default class User {
   account(platform, id, fn) {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Summary/',
+      bypass: true,
+      filter: 'data',
       format: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id
@@ -141,7 +147,7 @@ export default class User {
    */
   advisors(platform, id, fn) {
     return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Advisors/'
+      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Advisors/',
       format: {
         destinyMembershipType: this.destiny.console(platform, true),
         destinyMembershipId: id
