@@ -61,7 +61,7 @@ export default class Destiny extends EventEmitter {
     //
     this.bungie = bungie;
     this.readystate = Destiny.CLOSED;
-    this.vault = Vault(this, options.ttl || '5 minutes');
+    this.vault = new Vault(this, options.ttl || '5 minutes');
     this.XHR = options.XHR || global.XMLHttpRequest;
 
     this.initialize();
@@ -142,7 +142,6 @@ export default class Destiny extends EventEmitter {
         });
       }
     }, (err) => {
-      console.log('done');
       if (err) return this.emit('error', failure(err, {
         reason: 'Failed to retrieve account information from the Bungie API',
         action: 'login'
@@ -155,6 +154,22 @@ export default class Destiny extends EventEmitter {
       this.emit('refreshed');
     });
 
+    return this;
+  }
+
+  /**
+   * Execute the function when the instance is loaded.
+   *
+   * @param {Function} fn
+   * @returns {Destiny}
+   * @public
+   */
+  go(fn) {
+    if (this.readystate !== Destiny.COMPLETE) {
+      return this.once('refreshed', fn);
+    }
+
+    fn();
     return this;
   }
 
