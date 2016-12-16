@@ -10,8 +10,11 @@ export default class Character {
   constructor(destiny, data) {
     var base = data.characterBase;
 
+    this.data = base;
     this.destiny = destiny;
-    this.id = base.id;
+
+    this.id = base.characterId;
+    this.played = new Date(base.dateLastPlayed);
   }
 
   /**
@@ -23,5 +26,27 @@ export default class Character {
   inventory(fn) {
     const { id, platform, character } = this.destiny
     return character.inventory(platform, id, this.id, fn);
+  }
+
+  /**
+   * Retrieve player activities.
+   *
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  activities(fn) {
+    const { id, platform, character } = this.destiny
+    return character.activities(platform, id, this.id, fn);
+  }
+
+  /**
+   * Retrieve player advisors.
+   *
+   * @param {Function} fn Completion callback.
+   * @public
+   */
+  advisors(fn) {
+    const { id, platform, character } = this.destiny
+    return character.advisors(platform, id, this.id, fn);
   }
 }
