@@ -45,6 +45,28 @@ export default class Account extends EventEmitter {
   }
 
   /**
+   * Check the character at the specified index;
+   *
+   * @param {Number} index Index of the character.
+   * @returns {Character} Character model.
+   * @public
+   */
+  get(index) {
+    return this.characters[0];
+  }
+
+  /**
+   * Find a character by a given character id.
+   *
+   * @param {String} id Character id.
+   * @returns {Character} Character model.
+   * @public
+   */
+  find(id) {
+    return this.characters.find((character) => character.id === id);
+  }
+
+  /**
    * Received an update of characters, start merging and updating all the
    * things.
    *
@@ -66,6 +88,13 @@ export default class Account extends EventEmitter {
 
       character.set(base);
     });
+
+    //
+    // Make sure that
+    //
+    data.characters.sort(function (a, b) {
+
+    });
   }
 
   /**
@@ -75,6 +104,6 @@ export default class Account extends EventEmitter {
    * @public
    */
   active() {
-
+    return this.get(0);
   }
 }
