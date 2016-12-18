@@ -15,8 +15,7 @@ import UserEndpoint from './endpoints/user';
 //
 // Import various of models.
 //
-import Character from './character';
-import Vault from './vault';
+import { Characters } from './models';
 
 /**
  * Destiny API interactions.
@@ -28,8 +27,6 @@ import Vault from './vault';
  * - platform:  Platform (console) that we're using.
  * - username:  Username of your account.
  * - timeout:   Maximum request timeout.
- * - ttl:       Time to live for the vault so items are continuously updated
- *              before interaction.
  *
  * @constructor
  * @param {Bungie} bungie The bungie-auth instance.
@@ -48,11 +45,11 @@ export default class Destiny extends EventEmitter {
 
     this.api = 'https://www.bungie.net/Platform/';
 
-    this.timeout = 30000;   // API timeout.
-    this.characters = [];   // Available characters.
-    this.platform = '';     // Console that is used.
-    this.username = '';     // Bungie username.
-    this.id = '';           // Bungie membership id.
+    this.characters = new Characters(this);   // Available characters.
+    this.timeout = 30000;                     // API timeout.
+    this.platform = '';                       // Console that is used.
+    this.username = '';                       // Bungie username.
+    this.id = '';                             // Bungie membership id.
 
     this.change(options);
 
@@ -61,7 +58,6 @@ export default class Destiny extends EventEmitter {
     //
     this.bungie = bungie;
     this.readystate = Destiny.CLOSED;
-    this.vault = new Vault(this, options.ttl || '5 minutes');
     this.XHR = options.XHR || global.XMLHttpRequest;
 
     this.initialize();
@@ -75,7 +71,7 @@ export default class Destiny extends EventEmitter {
   initialize() {
     this.on('refresh', function reset(hard) {
       this.change({
-        characters: [],
+        characters: new Characters(this),
         platform: '',
         username: '',
         id: ''
@@ -132,12 +128,7 @@ export default class Destiny extends EventEmitter {
         this.user.account(this.platform, this.id, (err, data) => {
           if (err) return next(err);
 
-          if (data.characters) this.change({
-            characters: data.characters.map((data) => {
-              return new Character(this, data);
-            })
-          });
-
+          this.characters.set(data);
           next();
         });
       }

@@ -8,13 +8,21 @@
  */
 export default class Character {
   constructor(destiny, data) {
-    var base = data.characterBase;
-
-    this.data = base;
     this.destiny = destiny;
 
-    this.id = base.characterId;
-    this.played = new Date(base.dateLastPlayed);
+    this.set(data);
+  }
+
+  /**
+   * Update our internal specification to match the API response from Bungie.
+   *
+   * @param {Object} data Character information.
+   * @public
+   */
+  set(data) {
+    this.data = data;
+    this.id = data.characterId;
+    this.played = new Date(data.dateLastPlayed);
   }
 
   /**
