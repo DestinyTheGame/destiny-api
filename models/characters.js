@@ -102,8 +102,8 @@ export default class Account extends EventEmitter {
     //
     // Make sure that
     //
-    data.characters.sort(function (a, b) {
-
+    data.characters.sort(function sort(a, b) {
+      return +a.played > +b.played;
     });
   }
 
