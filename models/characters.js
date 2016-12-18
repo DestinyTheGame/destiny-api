@@ -67,6 +67,16 @@ export default class Account extends EventEmitter {
   }
 
   /**
+   * Iterate over the characters.
+   *
+   * @returns {Array} characters
+   * @public
+   */
+  forEach() {
+    return this.characters.forEach(...arguments);
+  }
+
+  /**
    * Received an update of characters, start merging and updating all the
    * things.
    *
@@ -105,5 +115,15 @@ export default class Account extends EventEmitter {
    */
   active() {
     return this.get(0);
+  }
+
+  /**
+   * Destroy the class instance.
+   *
+   * @public
+   */
+  destroy() {
+    this.timers.destroy();
+    this.characters.length = 0;
   }
 }
