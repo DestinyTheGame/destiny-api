@@ -1,0 +1,3365 @@
+{
+  "Response": {
+    "data": {
+      "activities": {
+        "prisonofelders": {
+          "identifier": "prisonofelders",
+          "display": {
+            "categoryHash": 1025694749,
+            "icon": "/common/destiny_content/icons/0f8f8f945bee3732f184724b80f6aaf3.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg",
+            "advisorTypeCategory": "Prison of Elders",
+            "activityHash": 2326253031,
+            "destinationHash": 3393905939,
+            "factionHash": 3641985238,
+            "placeHash": 2512485647,
+            "about": "<div>The Prison of Elders is an arena-style activity located in the Reef where players may team up and face off against the prisoners of the House of Judgement.&nbsp;</div><div><br></div><div>After completing a Prison of Elders activity, players may then venture into a room below the airlock, which offers the riches of the Reef.</div><div><br></div><div>For more information, please see our <a href=\"https://www.bungie.net/en/Help/Article/13700\" title=\"\" target=\"\">PRISON OF ELDERS FAQ</a></div><div><br></div>",
+            "status": "",
+            "tips": [
+              "Bring a team! Level 28 Prison of Elders will match players for you. Levels 32, 34, and 35 require a premade Fireteam.",
+              "Etheric Light earned in Level 34 and 35 Prison of Elders can Ascend Year 1 Weapons to a maximum Light of 170. They may also be turned in to Petra Venj for Queen's Wrath reputation."
+            ],
+            "recruitmentIds": [
+              "PrisonOfElders"
+            ]
+          },
+          "vendorHash": 1998812735,
+          "progressionHash": 3641985238,
+          "activityTiers": [
+            {
+              "activityHash": 3508129769,
+              "tierDisplayName": "Level 32",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 2759745988,
+                      "value": 200
+                    },
+                    {
+                      "itemHash": 1904384474,
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 3508129769,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 32,
+                "recommendedLight": 160,
+                "difficultyTier": 2
+              },
+              "extended": {
+                "rounds": [
+                  {
+                    "enemyRaceHash": 711470098,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Airborne",
+                            "description": "Players deal more damage while in the air.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_airborne_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Grounded",
+                            "description": "Players take more damage while airborne.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_grounded_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 711470098,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Void Burn",
+                            "description": "Void Damage from any source is greatly increased.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_damage_boost_void_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Angry",
+                            "description": "Minions of the Darkness won't flinch, even after massive damage.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_combatants_ping_disable_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Exposure",
+                            "description": "Guardian shields are increased but do not replenish.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_morbid_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "activityHash": 4079642014,
+              "tierDisplayName": "Level 34",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 2759745988,
+                      "value": 300
+                    },
+                    {
+                      "itemHash": 2990972208,
+                      "value": 1
+                    },
+                    {
+                      "itemHash": 3109888176,
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 4079642014,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 34,
+                "recommendedLight": 170,
+                "difficultyTier": 2
+              },
+              "extended": {
+                "rounds": [
+                  {
+                    "enemyRaceHash": 546070638,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Juggler",
+                            "description": "No ammo drops for your equipped weapon.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_ammo_suppress_active_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Lightswitch",
+                            "description": "Minions of the Darkness deal much more melee damage.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_lethal_melee_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 1636291695,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Catapult",
+                            "description": "Grenade recharge rate is greatly increased.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_catapult_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Brawler",
+                            "description": "Guardian Melee damage is greatly increased.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_brawler_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 546070638,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Juggler",
+                            "description": "No ammo drops for your equipped weapon.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_ammo_suppress_active_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "activityHash": 2326253031,
+              "tierDisplayName": "Level 35",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 2759745988,
+                      "value": 500
+                    },
+                    {
+                      "itemHash": 1904384474,
+                      "value": 1
+                    },
+                    {
+                      "itemHash": 2990972208,
+                      "value": 1
+                    },
+                    {
+                      "itemHash": 3109888176,
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 2326253031,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 35,
+                "recommendedLight": 175,
+                "difficultyTier": 2
+              },
+              "extended": {
+                "rounds": [
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Exposure",
+                            "description": "Guardian shields are increased but do not replenish.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_morbid_000_002.v2.png"
+                          },
+                          {
+                            "displayName": "Brawler",
+                            "description": "Guardian Melee damage is greatly increased.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_brawler_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 711470098,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Grounded",
+                            "description": "Players take more damage while airborne.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_grounded_000_002.v2.png"
+                          },
+                          {
+                            "displayName": "Airborne",
+                            "description": "Players deal more damage while in the air.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_airborne_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 546070638,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Catapult",
+                            "description": "Grenade recharge rate is greatly increased.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_catapult_000_002.v2.png"
+                          },
+                          {
+                            "displayName": "Arc Burn",
+                            "description": "Arc Damage from any source is greatly increased.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_damage_boost_arc_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 1636291695,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Specialist",
+                            "description": "Special Weapon damage is favored.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_specialist_000_002.v2.png"
+                          },
+                          {
+                            "displayName": "Juggler",
+                            "description": "No ammo drops for your equipped weapon.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_ammo_suppress_active_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "enemyRaceHash": 1636291695,
+                    "skullCategories": [
+                      {
+                        "title": "Modifiers",
+                        "skulls": [
+                          {
+                            "displayName": "Trickle",
+                            "description": "Recharge of abilities is significantly reduced.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_trickle_000_002.v2.png"
+                          },
+                          {
+                            "displayName": "Small Arms",
+                            "description": "Primary Weapon damage is favored.",
+                            "icon": "/img/destiny_content/scripted_skulls/skull_small_arms_000_002.v2.png"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "elderchallenge": {
+          "identifier": "elderchallenge",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1025694749,
+            "icon": "/common/destiny_content/icons/0f8f8f945bee3732f184724b80f6aaf3.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg",
+            "advisorTypeCategory": "Challenge of the Elders",
+            "activityHash": 2201622127,
+            "playlistHash": 1673931290,
+            "destinationHash": 3393905939,
+            "factionHash": 3641985238,
+            "placeHash": 2512485647,
+            "about": "<div>Challenge of the Elders is a weekly activity, featuring special modifiers in the Level 42 Prison of Elders Arena. Players must first receive an Elder's Sigil from Variks the Loyal in the Vestian Outpost before they may participate in the Challenge of the Elders.&nbsp;</div><div><br></div><div>Rewards are granted by Variks for meeting the High Score and Cumulative Score goals on the Elder's Sigil. Elder's Sigils expire every week, and new ones will need to be received from Variks.</div><div><br></div><div>For more information on Challenge of the Elders, please see <a href=\"https://www.bungie.net/en/Help/Article/44552\" title=\"\" target=\"\">CHALLENGE OF THE ELDERS FAQ</a></div>",
+            "status": "",
+            "tips": [
+              "The High Score objective on the Elder's Sigil must be met in a single Challenge of the Elders attempt.",
+              "The Cumulative Score objective on the Elder's Sigil may be earned over numerous attempts.",
+              "View your Elder's Sigil, received from Variks, for information on the score modifier for the current week.",
+              "Leveraging the score modifier for each week's Challenge of the Elders is the best way to accumulate points.",
+              "Expired Elder's Sigils will persist in your Mission Inventory, and will need to be discarded manually."
+            ],
+            "recruitmentIds": [
+              "ChallengeOfElders"
+            ]
+          },
+          "completion": {
+            "complete": false,
+            "success": false
+          },
+          "vendorHash": 1998812735,
+          "progressionHash": 3641985238,
+          "bountyHashes": [
+            1446426158,
+            891614685,
+            1157478132
+          ],
+          "activityTiers": [
+            {
+              "activityHash": 1673931290,
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "activityData": {
+                "activityHash": 1673931290,
+                "isNew": false,
+                "canLead": false,
+                "canJoin": false,
+                "isCompleted": false,
+                "isVisible": false,
+                "displayLevel": 42,
+                "recommendedLight": 320,
+                "difficultyTier": 2
+              },
+              "extended": {
+                "rounds": [
+                  {
+                    "enemyRaceHash": 1636291695,
+                    "skullCategories": [],
+                    "bossCombatantHash": 7,
+                    "bossLightLevel": 310
+                  },
+                  {
+                    "enemyRaceHash": 3265589059,
+                    "skullCategories": [],
+                    "bossCombatantHash": 8,
+                    "bossLightLevel": 320
+                  },
+                  {
+                    "enemyRaceHash": 711470098,
+                    "skullCategories": [],
+                    "bossCombatantHash": 4,
+                    "bossLightLevel": 330
+                  }
+                ]
+              }
+            }
+          ],
+          "extended": {
+            "highestWinRank": 0,
+            "skullCategories": [
+              {
+                "title": "Modifiers",
+                "skulls": [
+                  {
+                    "displayName": "Catapult",
+                    "description": "Grenade recharge rate is greatly increased.",
+                    "icon": "/common/destiny_content/icons/d839e0756a1a74d40c0dc845e012f54f.png"
+                  },
+                  {
+                    "displayName": "Ironclad",
+                    "description": "More enemies have shields.",
+                    "icon": "/common/destiny_content/icons/8ebb5c4605d9aa01335af6afdff44f43.png"
+                  }
+                ]
+              },
+              {
+                "title": "Bonuses",
+                "skulls": [
+                  {
+                    "displayName": "Super Kill Bonus",
+                    "description": "Super kills are worth more points.",
+                    "icon": "/common/destiny_content/icons/474c528a9bef30bfc5b981844b556ef4.png"
+                  }
+                ]
+              }
+            ],
+            "objectives": [
+              {
+                "objectiveHash": 2457231571,
+                "destinationHash": 0,
+                "activityHash": 0,
+                "progress": 0,
+                "hasProgress": false,
+                "isComplete": false
+              },
+              {
+                "objectiveHash": 3899342402,
+                "destinationHash": 0,
+                "activityHash": 0,
+                "progress": 0,
+                "hasProgress": false,
+                "isComplete": false
+              }
+            ]
+          }
+        },
+        "trials": {
+          "identifier": "trials",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-23T17:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 767430688,
+            "icon": "/img/theme/destiny/icons/osiris_diamond.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/crucible_the_anomaly.jpg",
+            "flavor": "The Anomaly",
+            "advisorTypeCategory": "Trials of Osiris",
+            "activityHash": 2082069870,
+            "playlistHash": 3234259779,
+            "destinationHash": 2777041980,
+            "placeHash": 4088006058,
+            "about": "<div>Trials of Osiris is a weekly Crucible event, featuring an Elimination style game type with level advantages enabled. This playlist is available between Friday (10:00 AM Pacific, 5:00 PM UTC) through Tuesday (2:00 AM Pacific, 9:00 AM UTC).</div><div><br></div><div>In order to participate in the Trials of Osiris, players must collect a Trials Passage from Brother Vance in the Vestian Outpost, and enter the Trials of Osiris playlist with a pre-made Fireteam of 3 players.</div><div><br></div><div>For more information, please see our <a href=\"https://www.bungie.net/en/Help/Article/13683\" title=\"\" target=\"\">TRIALS OF OSIRIS FAQ</a></div><div><br></div>",
+            "status": "",
+            "tips": [
+              "Level advantages are enabled! Equip your best gear before entering the Trials of Osiris.",
+              "You may purchase the Favor of Osiris, Mercy of Osiris, and Boon of Osiris buffs with Passage Coins by inspecting your Trials Passage.",
+              "You can earn exclusive Trials of Osiris Armor and Weapons by winning 5 and 7 matches on a single Trials Passage. These rewards may be received once per week, per character.",
+              "With the release of Destiny: Rise of Iron, players may now earn Trials of Osiris themed armor upon Match Completion. Wins are not required. "
+            ],
+            "recruitmentIds": [
+              "TrialsOfOsiris"
+            ],
+            "activityModeHash": 2889991113
+          },
+          "completion": {
+            "complete": false,
+            "success": false,
+            "completionCount": 7,
+            "maxCompletions": 9
+          },
+          "vendorHash": 1889676839,
+          "bountyHashes": [
+            777856833,
+            2617011382,
+            3340894601,
+            2167576374,
+            1364828729,
+            2400432043
+          ],
+          "extended": {
+            "scoreCard": {
+              "ticketItem": {
+                "itemHash": 491180618,
+                "bindStatus": 0,
+                "isEquipped": false,
+                "itemInstanceId": "6917529120284629527",
+                "itemLevel": 0,
+                "stackSize": 1,
+                "qualityLevel": 0,
+                "stats": [],
+                "canEquip": false,
+                "equipRequiredLevel": 0,
+                "unlockFlagHashRequiredToEquip": 0,
+                "cannotEquipReason": 0,
+                "damageType": 0,
+                "damageTypeHash": 0,
+                "damageTypeNodeIndex": -1,
+                "damageTypeStepIndex": -1,
+                "talentGridHash": 4037879877,
+                "nodes": [
+                  {
+                    "isActivated": true,
+                    "stepIndex": 0,
+                    "state": 10,
+                    "hidden": false,
+                    "nodeHash": 0
+                  },
+                  {
+                    "isActivated": true,
+                    "stepIndex": 0,
+                    "state": 10,
+                    "hidden": false,
+                    "nodeHash": 1
+                  },
+                  {
+                    "isActivated": true,
+                    "stepIndex": 0,
+                    "state": 10,
+                    "hidden": false,
+                    "nodeHash": 2
+                  }
+                ],
+                "useCustomDyes": false,
+                "artRegions": {},
+                "isEquipment": false,
+                "isGridComplete": false,
+                "perks": [],
+                "location": 1,
+                "transferStatus": 2,
+                "locked": false,
+                "lockable": false,
+                "objectives": [],
+                "state": 0
+              },
+              "hasTicket": true,
+              "maxWins": 9,
+              "maxLosses": 3,
+              "wins": 4,
+              "losses": 1
+            },
+            "winRewardDetails": [
+              {
+                "hasReward": true,
+                "hasSecretReward": false,
+                "winCount": 5,
+                "redeemed": true,
+                "unredeemedRewards": [],
+                "isRewardRank": true,
+                "rewardRank": 1,
+                "rewardItemHashes": [
+                  190411895,
+                  1627572929,
+                  1176452006,
+                  1998946585,
+                  2410077980,
+                  2241750289,
+                  3324900039,
+                  380709696,
+                  1648442595,
+                  4040397782,
+                  997700304,
+                  1963125496,
+                  1059881049,
+                  1314758954,
+                  741603733,
+                  3347001815
+                ]
+              },
+              {
+                "hasReward": true,
+                "hasSecretReward": false,
+                "winCount": 7,
+                "redeemed": true,
+                "unredeemedRewards": [],
+                "isRewardRank": true,
+                "rewardRank": 2,
+                "rewardItemHashes": [
+                  3366907656,
+                  2968802931,
+                  1398798173,
+                  320170738,
+                  3490124917,
+                  2904362064,
+                  1232070660
+                ]
+              },
+              {
+                "hasReward": true,
+                "hasSecretReward": true,
+                "winCount": 9,
+                "redeemed": false,
+                "unredeemedRewards": [],
+                "isRewardRank": true,
+                "rewardRank": 3,
+                "rewardItemHashes": []
+              }
+            ],
+            "highestWinRank": 7
+          }
+        },
+        "armsday": {
+          "identifier": "armsday",
+          "status": {
+            "expirationDate": "2017-01-01T09:00:00Z",
+            "startDate": "2016-12-28T09:00:00Z",
+            "expirationKnown": true,
+            "active": false
+          },
+          "display": {
+            "categoryHash": 299173589,
+            "icon": "/common/destiny_content/icons/f2595a4646389cda7574952125fb45bc.png",
+            "image": "/img/theme/destiny/bgs/advisors/GunSmith.jpg",
+            "flavor": "Place your orders!",
+            "advisorTypeCategory": "Arms Day",
+            "eventHash": 7,
+            "factionHash": 354219928,
+            "about": "<div>Armsday is a weekly opportunity for players to purchase Legendary Weapons in the form of Armsday Orders from Banshee-44 in the Tower. Players may also complete Field Test Weapons for Gunsmith Reputation, which in turn allows players to place more Armsday Orders every week. A maximum of 3 Armsday Orders may be placed at once, and they are delivered every Wednesday.</div><div><br></div><div><div>For more information on Armsday, please see our <a href=\"https://www.bungie.net/en/Help/Article/13613\" title=\"\" target=\"\">ARMSDAY FAQ</a></div></div>",
+            "status": "",
+            "tips": [
+              "Completing Field Test Weapons received from the Gunsmith awards Gunsmith Reputation.",
+              "Ranking up your Gunsmith Reputation will allow you to hold more Armsday Orders at a single time.",
+              "Ranking up your Gunsmith Reputation will offer players a greater variety of weapons when redeeming an Armsday order.",
+              "Reputation Packages granted for ranking up the Gunsmith offer a guaranteed Legendary Weapon."
+            ],
+            "recruitmentIds": []
+          },
+          "vendorHash": 570929315,
+          "progressionHash": 2335631936,
+          "extended": {
+            "highestWinRank": 0,
+            "orders": [],
+            "purchasedOrders": [],
+            "redemptions": {}
+          }
+        },
+        "weeklycrucible": {
+          "identifier": "weeklycrucible",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1986932861,
+            "icon": "/img/destiny_content/advisors/pvp_Mayhem_Clash.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/weekly_crucible.jpg",
+            "flavor": "Weekly Crucible Playlist",
+            "advisorTypeCategory": "Weekly Crucible Playlist",
+            "activityHash": 3619606113,
+            "destinationHash": 2777041980,
+            "factionHash": 964120289,
+            "placeHash": 4088006058,
+            "about": "The Weekly Crucible Playlist is a single selection Crucible game type that provides a weekly offering of Legendary Marks. The available playlist changes weekly, and may be completed for Legendary Marks up to 3 times between Weekly Resets.",
+            "status": "",
+            "tips": [
+              "Make sure that you have room for Legendary Marks prior to participating in the Weekly Crucible Playlist. Marks not gained due to a full Legendary Mark inventory will be lost.",
+              "When Iron Banner is active, the Weekly Crucible Playlist can be found in the Director, under Crucible."
+            ],
+            "recruitmentIds": [
+              "PvP"
+            ]
+          },
+          "completion": {
+            "complete": true,
+            "success": true,
+            "completionCount": 3,
+            "maxCompletions": 3
+          },
+          "vendorHash": 3746647075,
+          "progressionHash": 1357277120,
+          "bountyHashes": [
+            3746968992,
+            1736150516,
+            3262574748,
+            4162172577,
+            3165208825,
+            3910397531,
+            1470045400,
+            2751498155,
+            3018625105
+          ],
+          "activityTiers": [
+            {
+              "activityHash": 3619606113,
+              "activityData": {
+                "activityHash": 3619606113,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": true,
+                "isVisible": true,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "wrathofthemachine": {
+          "identifier": "wrathofthemachine",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1986932861,
+            "icon": "/common/destiny_content/icons/cedbdd5c457008b9f04ba4de283a2c76.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/wrath_of_the_machine.jpg",
+            "advisorTypeCategory": "Wrath of the Machine",
+            "activityHash": 260765522,
+            "destinationHash": 2468353467,
+            "placeHash": 3747705955,
+            "about": "Wrath of the Machine is a new Raid activity which offers high-level rewards. This Raid is available to those who own Destiny: Rise of Iron.&nbsp;<div><br></div><div>Rewards may be earned once per week, per difficulty, per character. Once unlocked, this activity may be found in the Director, through the Earth location.<br><br>Wrath of the Machine also introduces SIVA Key Fragments. These may be earned multiple times upon specific checkpoint completions. For additional information, please see the <a href=\"https://www.bungie.net/7_Weekly-Lockouts-and-Progression-Resets/en/Help/Article/12287\" title=\"\" target=\"\">Weekly Lockouts and Progression Help Article</a>.<br></div>",
+            "status": "",
+            "tips": [
+              "Progress in the Wrath of the Machine Raid is saved, and may be resumed later. Checkpoints are wiped with each Weekly Reset.",
+              "SIVA Key Fragments may be combined to crease SIVA Cache Keys. These Keys may be used on Checkpoint Caches once per week, per difficulty.",
+              "SIVA Cache Keys may be broken down into Key Fragments at Shiro-4 at the Iron Temple."
+            ],
+            "recruitmentIds": [
+              "WrathOfTheMachine",
+              "WrathOfTheMachineHeroic"
+            ]
+          },
+          "activityTiers": [
+            {
+              "activityHash": 260765522,
+              "tierDisplayName": "Normal",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [
+                {
+                  "title": "Modifiers",
+                  "skulls": [
+                    {
+                      "displayName": "Aksis Challenge",
+                      "description": "You have been challenged...",
+                      "icon": "/common/destiny_content/icons/c7d0a0fef92473d4b19fca4b8a004fab.png"
+                    }
+                  ]
+                }
+              ],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 260765522,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 42,
+                "recommendedLight": 370,
+                "difficultyTier": 2
+              }
+            },
+            {
+              "activityHash": 1387993552,
+              "tierDisplayName": "Hard",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [
+                {
+                  "title": "Modifiers",
+                  "skulls": [
+                    {
+                      "displayName": "Aksis Challenge",
+                      "description": "You have been challenged...",
+                      "icon": "/common/destiny_content/icons/c7d0a0fef92473d4b19fca4b8a004fab.png"
+                    },
+                    {
+                      "displayName": "Heroic",
+                      "description": "Enemies appear in greater numbers and are more aggressive.",
+                      "icon": "/common/destiny_content/icons/f0cb6d6919a2cc8e834ce49832cd5659.png"
+                    }
+                  ]
+                }
+              ],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 1387993552,
+                "isNew": false,
+                "canLead": false,
+                "canJoin": true,
+                "isCompleted": true,
+                "isVisible": false,
+                "displayLevel": 42,
+                "recommendedLight": 380,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "kingsfall": {
+          "identifier": "kingsfall",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1025694749,
+            "icon": "/common/destiny_content/icons/cedbdd5c457008b9f04ba4de283a2c76.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg",
+            "advisorTypeCategory": "King's Fall",
+            "activityHash": 1733556769,
+            "destinationHash": 2897855902,
+            "placeHash": 596872852,
+            "about": "<div>King's Fall is a Year 2 raid activity which offers high-level rewards. These rewards may be earned once, per week, per difficulty, per character. Once unlocked, it can be found in the Director, on the Dreadnaught.</div><div><br></div><div>Every week, there is a King's Fall Challenge. Upon completing this challenge, players are offered bonus high-level rewards.</div>",
+            "status": "",
+            "tips": [
+              "Progress in the King's Fall raid is saved, and can be resumed later. Checkpoints are wiped with every Weekly Reset.",
+              "The King's Fall Challenge each week can be viewed after selecting the King's Fall activity in the Director.",
+              "All weapons from the King's Fall raid have the \"Cocoon\" perk. Once unlocked on a weapon, it will reload while it is stowed."
+            ],
+            "recruitmentIds": [
+              "KingsFall",
+              "KingsFallHeroic"
+            ]
+          },
+          "activityTiers": [
+            {
+              "activityHash": 1733556769,
+              "tierDisplayName": "Normal",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [
+                {
+                  "title": "Modifiers",
+                  "skulls": [
+                    {
+                      "displayName": "Oryx Challenge",
+                      "description": "You have been challenged...",
+                      "icon": "/common/destiny_content/icons/7dcab3b3bd1d3d691f370aafcb92ed0c.png"
+                    }
+                  ]
+                }
+              ],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 1733556769,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 42,
+                "recommendedLight": 290,
+                "difficultyTier": 2
+              }
+            },
+            {
+              "activityHash": 3534581229,
+              "tierDisplayName": "Hard",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [
+                {
+                  "title": "Modifiers",
+                  "skulls": [
+                    {
+                      "displayName": "Oryx Challenge",
+                      "description": "You have been challenged...",
+                      "icon": "/common/destiny_content/icons/7dcab3b3bd1d3d691f370aafcb92ed0c.png"
+                    }
+                  ]
+                }
+              ],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 3534581229,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 42,
+                "recommendedLight": 310,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "vaultofglass": {
+          "identifier": "vaultofglass",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1025694749,
+            "icon": "/common/destiny_content/icons/cedbdd5c457008b9f04ba4de283a2c76.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg",
+            "advisorTypeCategory": "Vault of Glass",
+            "activityHash": 2659248071,
+            "destinationHash": 518553403,
+            "placeHash": 3871070152,
+            "about": "The Vault of Glass is a Year 1 raid activity which offers Year 1 rewards. These rewards may be earned once, per week, per difficulty, per character. Once unlocked, this activitiy can be found in the Director, on Venus.",
+            "status": "",
+            "tips": [
+              "Progress in the Vault of Glass raid is saved, and can be resumed later. Checkpoints are wiped with every Weekly Reset.",
+              "Completing Vault of Glass on Hard Mode offers players the chance to receive the Vex Mythoclast Year 1 Fusion Rifle."
+            ],
+            "recruitmentIds": [
+              "VaultOfGlass",
+              "VaultOfGlassHeroic"
+            ]
+          },
+          "activityTiers": [
+            {
+              "activityHash": 2659248071,
+              "tierDisplayName": "Normal",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    },
+                    {
+                      "itemHash": 1743040968,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 2659248071,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 26,
+                "recommendedLight": 130,
+                "difficultyTier": 2
+              }
+            },
+            {
+              "activityHash": 2659248068,
+              "tierDisplayName": "Hard",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    },
+                    {
+                      "itemHash": 1743040968,
+                      "value": 0
+                    },
+                    {
+                      "itemHash": 3747303650,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 2659248068,
+                "isNew": false,
+                "canLead": false,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": false,
+                "displayLevel": 30,
+                "recommendedLight": 150,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "crota": {
+          "identifier": "crota",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1025694749,
+            "icon": "/common/destiny_content/icons/cedbdd5c457008b9f04ba4de283a2c76.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg",
+            "advisorTypeCategory": "Crota's End",
+            "activityHash": 1836893116,
+            "destinationHash": 4233735899,
+            "placeHash": 3128647858,
+            "about": "<div>Crota's End is a Year 1 raid activity which offers Year 1 rewards. These rewards may be earned once, per week, per difficulty, per character. Once unlocked, this activity can be found in the Director, on the Moon.</div>",
+            "status": "",
+            "tips": [
+              "Crota's End may be completed for rewards once per week, per difficulty, per character.",
+              "Progress in the Crota's End raid is saved, and can be resumed later. Checkpoints are wiped with every Weekly Reset.",
+              "Players may receive the Cryptographic Shader for completing Crota's End on Normal, and the Glowhoo Shader for completing it on Hard.",
+              "The Crux of Crota, which can drop from completing Crota's End on Hard, is needed to unlock the Necrochasm Year 1 Exotic Auto Rifle."
+            ],
+            "recruitmentIds": [
+              "Crota",
+              "CrotaHeroic"
+            ]
+          },
+          "activityTiers": [
+            {
+              "activityHash": 1836893116,
+              "tierDisplayName": "Normal",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    },
+                    {
+                      "itemHash": 3974960059,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 1836893116,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 30,
+                "recommendedLight": 150,
+                "difficultyTier": 2
+              }
+            },
+            {
+              "activityHash": 1836893119,
+              "tierDisplayName": "Hard",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "steps": [
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                },
+                {
+                  "complete": false
+                }
+              ],
+              "skullCategories": [],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 1772473720,
+                      "value": 0
+                    },
+                    {
+                      "itemHash": 3974960059,
+                      "value": 0
+                    },
+                    {
+                      "itemHash": 3747303650,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 1836893119,
+                "isNew": false,
+                "canLead": false,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": false,
+                "displayLevel": 33,
+                "recommendedLight": 165,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "nightfall": {
+          "identifier": "nightfall",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1986932861,
+            "icon": "/common/destiny_content/icons/6debec16087ea6f152a4741d691febd7.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg",
+            "advisorTypeCategory": "Nightfall Strike",
+            "activityHash": 2221365740,
+            "playlistHash": 1293005540,
+            "destinationHash": 2468353467,
+            "factionHash": 468098704,
+            "placeHash": 3747705955,
+            "about": "<div>The Weekly Nightfall Strike is a single selection Strike that features a unique combination of modifiers every week. The Weekly Nightfall Strike and modifiers change with every Weekly Reset.</div><div><br></div>",
+            "status": "",
+            "tips": [
+              "Bring a team! The Weekly Nightfall Strike does not match you with other players.",
+              "The modifiers for every Nightfall are displayed in the Director. Use these modifiers to your advantage.",
+              "Nightfall rewards may be earned once per week, per character."
+            ],
+            "recruitmentIds": [
+              "Nightfall"
+            ]
+          },
+          "completion": {
+            "complete": true,
+            "success": false
+          },
+          "vendorHash": 2668878854,
+          "progressionHash": 3233510749,
+          "bountyHashes": [
+            4085991207,
+            3763238212,
+            3763238222,
+            1652727543,
+            1209869509,
+            1209869510
+          ],
+          "activityTiers": [
+            {
+              "activityHash": 2221365740,
+              "tierDisplayName": "",
+              "completion": {
+                "complete": true,
+                "success": false
+              },
+              "activityData": {
+                "activityHash": 2221365740,
+                "isNew": false,
+                "canLead": false,
+                "canJoin": true,
+                "isCompleted": true,
+                "isVisible": false,
+                "displayLevel": 42,
+                "recommendedLight": 380,
+                "difficultyTier": 2
+              }
+            }
+          ],
+          "extended": {
+            "highestWinRank": 0,
+            "skullCategories": [
+              {
+                "title": "Modifiers",
+                "skulls": [
+                  {
+                    "displayName": "Epic",
+                    "description": "Heavily shielded and highly aggressive enemies appear in great numbers.",
+                    "icon": "/common/destiny_content/icons/f6ebe545b71bd8975452e37d86506fa9.png"
+                  },
+                  {
+                    "displayName": "Berserk",
+                    "description": "Minions of the Darkness won't flinch, even after massive damage.",
+                    "icon": "/common/destiny_content/icons/a80f92e428b4f27049e716d8c15b8213.png"
+                  },
+                  {
+                    "displayName": "Small Arms",
+                    "description": "Primary Weapon damage is favored.",
+                    "icon": "/common/destiny_content/icons/078bc4876ab0b224fdbb178083d2593f.png"
+                  },
+                  {
+                    "displayName": "Match Game",
+                    "description": "Enemy shields are resistant to all unmatched Elemental Damage.",
+                    "icon": "/common/destiny_content/icons/65ff7f6b892b0aee10c6e698bdf51656.png"
+                  },
+                  {
+                    "displayName": "Airborne",
+                    "description": "Players deal more damage while in the air.",
+                    "icon": "/common/destiny_content/icons/afa5ad605d33446e5ad73e62a17e692f.png"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "heroicstrike": {
+          "identifier": "heroicstrike",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-20T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1986932861,
+            "icon": "/common/destiny_content/icons/6debec16087ea6f152a4741d691febd7.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/weekly_heroic.jpg",
+            "advisorTypeCategory": "Weekly Heroic Strike",
+            "activityHash": 870614351,
+            "destinationHash": 2512542997,
+            "factionHash": 468098704,
+            "placeHash": 3747705955,
+            "about": "<div>The Heroic Strike Playlist is a rotating playlist of randomly selected Heroic Strikes. The first Heroic Strike completed in a given week offers a guaranteed Legendary Engram upon defeating the Strike boss. Furthermore, players may receive 3 allotments of Legendary Marks for completing Heroic Strikes every week.&nbsp;</div>",
+            "status": "",
+            "tips": [
+              "Completing multiple consecutive Heroic Strikes without leaving the playlist grants players the \"Vanguard Streak\" buff.",
+              "The \"Vanguard Streak\" buff increases the chance of receiving greater rewards from defeating Strike bosses.",
+              "Players may consume Three of Coins for a chance to receive Exotic Engrams from Ultra bosses. Omnigul and the Psion Flayer bosses do not consume Three of Coins."
+            ],
+            "recruitmentIds": [
+              "Strikes"
+            ]
+          },
+          "completion": {
+            "complete": true,
+            "success": true
+          },
+          "vendorHash": 2668878854,
+          "progressionHash": 3233510749,
+          "bountyHashes": [
+            4085991207,
+            3763238212,
+            3763238222,
+            1652727543,
+            1209869509,
+            1209869510
+          ],
+          "activityTiers": [
+            {
+              "activityHash": 870614351,
+              "tierDisplayName": "",
+              "completion": {
+                "complete": true,
+                "success": true
+              },
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 3006793116,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 870614351,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": true,
+                "isVisible": true,
+                "displayLevel": 42,
+                "recommendedLight": 350,
+                "difficultyTier": 2
+              }
+            }
+          ],
+          "extended": {
+            "highestWinRank": 0,
+            "skullCategories": [
+              {
+                "title": "Modifiers",
+                "skulls": [
+                  {
+                    "displayName": "Heroic",
+                    "description": "Enemies appear in greater numbers and are more aggressive.",
+                    "icon": "/common/destiny_content/icons/f0cb6d6919a2cc8e834ce49832cd5659.png"
+                  },
+                  {
+                    "displayName": "Void Burn",
+                    "description": "Void damage from any source is greatly increased.",
+                    "icon": "/common/destiny_content/icons/4633c6a6086e0b7cb97161e1848b0a24.png"
+                  },
+                  {
+                    "displayName": "Brawler",
+                    "description": "Guardian melee damage is greatly increased.",
+                    "icon": "/common/destiny_content/icons/9ed156768933a3a13c711a4185cee8c4.png"
+                  },
+                  {
+                    "displayName": "Chaff",
+                    "description": "Player radar is disabled.",
+                    "icon": "/common/destiny_content/icons/a81954a7477cf038902276032346700b.png"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "dailychapter": {
+          "identifier": "dailychapter",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-26T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 2902063273,
+            "icon": "/img/theme/destiny/icons/node_story_featured.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/download_complete.jpg",
+            "advisorTypeCategory": "Daily Story Mission",
+            "activityHash": 3778091466,
+            "destinationHash": 4072959335,
+            "factionHash": 468098704,
+            "placeHash": 2809578934,
+            "about": "<div>The Daily Heroic Story Mission is a rotating selection of Story Missions that provide a daily offering of Legendary Marks. The available mission changes daily, and may only be completed for Legendary Marks once per day, per account.</div>",
+            "status": "",
+            "tips": [
+              "Some Daily Heroic Story Missions have secret endings which offer exclusive rewards.",
+              "Collecting Daily Vanguard Bounties prior to completing a Daily Heroic Story Mission is a great way to maximize the efficiency of your playtime.",
+              "Make sure that you have sufficient room for Legendary Marks prior to completing the Daily Heroic Story Mission. Marks not gained due to a full Legendary Mark inventory will be lost."
+            ],
+            "recruitmentIds": [
+              "Quest"
+            ]
+          },
+          "completion": {
+            "complete": false,
+            "success": false
+          },
+          "vendorHash": 2668878854,
+          "progressionHash": 3233510749,
+          "bountyHashes": [
+            4085991207,
+            3763238212,
+            3763238222,
+            1652727543,
+            1209869509,
+            1209869510
+          ],
+          "activityTiers": [
+            {
+              "activityHash": 3778091466,
+              "tierDisplayName": "",
+              "activityData": {
+                "activityHash": 3778091466,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": true,
+                "isVisible": true,
+                "displayLevel": 42,
+                "recommendedLight": 350,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "dailycrucible": {
+          "identifier": "dailycrucible",
+          "status": {
+            "expirationDate": "2016-12-27T09:00:00Z",
+            "startDate": "2016-12-26T09:00:00Z",
+            "expirationKnown": true,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 2902063273,
+            "icon": "/img/destiny_content/advisors/pvp_Rumble.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/daily_crucible.jpg",
+            "advisorTypeCategory": "Daily Crucible Playlist",
+            "activityHash": 98710471,
+            "destinationHash": 2777041980,
+            "factionHash": 964120289,
+            "placeHash": 4088006058,
+            "about": "<div>The Daily Crucible Playlist is a rotating selection of Crucible game types that provide a daily offering of Legendary Marks. The available playlist changes daily, and may only be completed for Legendary Marks once per day, per account.</div>",
+            "status": "",
+            "tips": [
+              "Daily Crucible Bounties available from Xander 99-40 in the Tower can often be completed in that day's Daily Crucible playlist.",
+              "Daily Crucible Bounties are also available from Berg 99-40 in the Vestian Outpost, and Micha 99-40 in Felwinter Peak.",
+              "Make sure that you have room for Legendary Marks prior to participating in the Daily Crucible Playlist. Marks not gained due to a full Legendary Mark inventory will be lost."
+            ],
+            "recruitmentIds": [
+              "Quest"
+            ]
+          },
+          "completion": {
+            "complete": true,
+            "success": true
+          },
+          "vendorHash": 3746647075,
+          "progressionHash": 1357277120,
+          "bountyHashes": [
+            3746968992,
+            1736150516,
+            3262574748,
+            4162172577,
+            3165208825,
+            3910397531,
+            1470045400,
+            2751498155,
+            3018625105
+          ],
+          "activityTiers": [
+            {
+              "activityHash": 98710471,
+              "activityData": {
+                "activityHash": 98710471,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": true,
+                "isVisible": true,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "prisonofelders-playlist": {
+          "identifier": "prisonofelders-playlist",
+          "status": {
+            "expirationKnown": false,
+            "active": true
+          },
+          "display": {
+            "categoryHash": 1025694749,
+            "icon": "/common/destiny_content/icons/0f8f8f945bee3732f184724b80f6aaf3.png",
+            "image": "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg",
+            "flavor": "",
+            "advisorTypeCategory": "Legacy Activities",
+            "activityHash": 1404620600,
+            "playlistHash": 1404620600,
+            "destinationHash": 3393905939,
+            "factionHash": 3641985238,
+            "placeHash": 2512485647,
+            "about": "<div>The Prison of Elders is an arena-style activity located in the Reef where players may team up and face off against the prisoners of the House of Judgement.&nbsp;</div><div><br></div><div>After completing a Prison of Elders activity, players may then venture into a room below the airlock, which offers the riches of the Reef.</div><div><br></div><div>For more information, please see our <a href=\"https://www.bungie.net/en/Help/Article/13700\" title=\"\" target=\"\">PRISON OF ELDERS FAQ</a></div>",
+            "status": "",
+            "tips": [
+              "Completing Level 41 Prison of Elders once every week will reward a Sterling Treasure!",
+              "Level 41 Prison of Elders may be completed for Legendary Marks instead of Weekly Heroic Strikes."
+            ],
+            "recruitmentIds": []
+          },
+          "completion": {
+            "complete": false,
+            "success": false
+          },
+          "vendorHash": 1998812735,
+          "activityTiers": [
+            {
+              "activityHash": 1404620600,
+              "tierDisplayName": "",
+              "completion": {
+                "complete": false,
+                "success": false
+              },
+              "skullCategories": [],
+              "rewards": [
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 308794062,
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "rewardItems": [
+                    {
+                      "itemHash": 949183486,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "activityData": {
+                "activityHash": 1404620600,
+                "isNew": false,
+                "canLead": true,
+                "canJoin": true,
+                "isCompleted": false,
+                "isVisible": true,
+                "displayLevel": 41,
+                "recommendedLight": 260,
+                "difficultyTier": 2
+              }
+            }
+          ]
+        },
+        "ironbanner": {
+          "identifier": "ironbanner",
+          "status": {
+            "expirationKnown": false,
+            "active": false
+          },
+          "display": {
+            "categoryHash": 299173589,
+            "icon": "/img/destiny_content/events/ib_icon.png",
+            "image": "/img/theme/destiny/bgs/advisors/IronBanner.jpg",
+            "flavor": "LIMITED TIME EVENT",
+            "advisorTypeCategory": "Iron Banner",
+            "activityHash": 86749741,
+            "eventHash": 2,
+            "playlistHash": 86749741,
+            "factionHash": 2161005788,
+            "about": "<div>Iron Banner is a week-long event in which players can compete in a level advantages enabled Crucible playlist for Iron Banner themed Rewards.&nbsp;</div><div><br></div><div>Once the Iron Banner event is live, players have until the Weekly Reset to compete in the playlist and earn Iron Banner reputation and rewards.</div><div><br></div><div>For more information, please see our <a href=\"https://www.bungie.net/en/Help/Article/13674\" title=\"\" target=\"\">IRON BANNER FAQ</a></div>",
+            "status": "",
+            "tips": [
+              "Iron Banner ranks and reputation reset with the conclusion of each Iron Banner event.",
+              "Competing in Iron Banner with secondary characters will grant them bonus Iron Banner reputation until they have caught up to the reputation of the character with your highest Iron Banner rank.",
+              "When Iron Banner is active, the regular Weekly Crucible Playlist can be found in the Director, under Crucible."
+            ],
+            "recruitmentIds": [
+              "IronBanner"
+            ],
+            "activityModeHash": 230958942
+          },
+          "vendorHash": 2610555297,
+          "progressionHash": 2161005788,
+          "bountyHashes": [],
+          "questHashes": []
+        },
+        "xur": {
+          "identifier": "xur",
+          "status": {
+            "expirationDate": "2017-01-01T09:00:00Z",
+            "startDate": "2016-12-30T09:00:00Z",
+            "expirationKnown": false,
+            "active": false
+          },
+          "display": {
+            "categoryHash": 299173589,
+            "icon": "/img/destiny_content/events/xur_icon.png",
+            "image": "/img/theme/destiny/bgs/advisors/Xur.jpg",
+            "flavor": "Agent of the Nine",
+            "advisorTypeCategory": "Xûr",
+            "eventHash": 5,
+            "recruitmentIds": []
+          },
+          "vendorHash": 2796397637,
+          "bountyHashes": [],
+          "questHashes": []
+        },
+        "srl": {
+          "identifier": "srl",
+          "status": {
+            "expirationKnown": false,
+            "active": false
+          },
+          "display": {
+            "categoryHash": 299173589,
+            "icon": "/img/destiny_content/events/SRL.png",
+            "image": "/img/theme/destiny/bgs/advisors/SRL.jpg",
+            "flavor": "Limited Time Event",
+            "advisorTypeCategory": "Sparrow Racing",
+            "eventHash": 6,
+            "factionHash": 2763619072,
+            "about": "<div>SRL is limited-availability Live Event that, when active, the players of Destiny can participate in. Starting on January 3rd, 2017, Destiny players on PlayStation 4 and Xbox One may play SRL through Private Matches.</div>",
+            "status": "",
+            "tips": [
+              "SRL features 4 tracks: Campus Martius, Infinite Descent, Shining Sands, and Haakon Precipice.",
+              "Players who own Destiny: Rise of Iron may play all 4 maps in Private Matches starting on January 3rd, 2017.",
+              "Players who do not own Destiny: Rise of Iron will only have access to Campus Martius and Infinite Descent when SRL is added to Private Matches on January 3rd, 2017."
+            ],
+            "recruitmentIds": [
+              "Quest"
+            ],
+            "activityModeHash": 2237414220
+          },
+          "vendorHash": 459708109,
+          "progressionHash": 2576753410,
+          "bountyHashes": [],
+          "questHashes": []
+        }
+      },
+      "activityCategories": {
+        "299173589": {
+          "categoryHash": 299173589
+        },
+        "767430688": {
+          "categoryHash": 767430688
+        },
+        "1025694749": {
+          "categoryHash": 1025694749
+        },
+        "1986932861": {
+          "categoryHash": 1986932861
+        },
+        "2902063273": {
+          "categoryHash": 2902063273
+        },
+        "3582600593": {
+          "categoryHash": 3582600593
+        }
+      },
+      "bounties": {
+        "777856833": {
+          "questHash": 777856833,
+          "stepHash": 777856833,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1889676839
+        },
+        "891614685": {
+          "questHash": 891614685,
+          "stepHash": 891614685,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1998812735
+        },
+        "1157478132": {
+          "questHash": 1157478132,
+          "stepHash": 1157478132,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1998812735
+        },
+        "1209869509": {
+          "questHash": 1209869509,
+          "stepHash": 1209869509,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "1209869510": {
+          "questHash": 1209869510,
+          "stepHash": 1209869510,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "1364828729": {
+          "questHash": 1364828729,
+          "stepHash": 1364828729,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1889676839
+        },
+        "1446426158": {
+          "questHash": 1446426158,
+          "stepHash": 1446426158,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1998812735
+        },
+        "1470045400": {
+          "questHash": 1470045400,
+          "stepHash": 1470045400,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "1652727543": {
+          "questHash": 1652727543,
+          "stepHash": 1652727543,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "1736150516": {
+          "questHash": 1736150516,
+          "stepHash": 1736150516,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "2167576374": {
+          "questHash": 2167576374,
+          "stepHash": 2167576374,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1889676839
+        },
+        "2400432043": {
+          "questHash": 2400432043,
+          "stepHash": 2400432043,
+          "stepObjectives": [
+            {
+              "objectiveHash": 3932659357,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 16,
+              "hasProgress": true,
+              "isComplete": false
+            },
+            {
+              "objectiveHash": 357818112,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 50,
+              "hasProgress": true,
+              "isComplete": true
+            }
+          ],
+          "tracked": false,
+          "itemInstanceId": "6917529120079789536",
+          "completed": false,
+          "started": true,
+          "vendorHash": 1889676839
+        },
+        "2617011382": {
+          "questHash": 2617011382,
+          "stepHash": 2617011382,
+          "stepObjectives": [
+            {
+              "objectiveHash": 211453120,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 0,
+              "hasProgress": true,
+              "isComplete": false
+            }
+          ],
+          "tracked": false,
+          "itemInstanceId": "6917529119946529864",
+          "completed": false,
+          "started": true,
+          "vendorHash": 1889676839
+        },
+        "2751498155": {
+          "questHash": 2751498155,
+          "stepHash": 2751498155,
+          "stepObjectives": [
+            {
+              "objectiveHash": 329862370,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 5,
+              "hasProgress": true,
+              "isComplete": false
+            },
+            {
+              "objectiveHash": 2502495675,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 29,
+              "hasProgress": true,
+              "isComplete": false
+            },
+            {
+              "objectiveHash": 2662293348,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 30,
+              "hasProgress": true,
+              "isComplete": true
+            },
+            {
+              "objectiveHash": 988341611,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 20,
+              "hasProgress": true,
+              "isComplete": true
+            }
+          ],
+          "tracked": false,
+          "itemInstanceId": "6917529115751849856",
+          "completed": false,
+          "started": true
+        },
+        "3018625105": {
+          "questHash": 3018625105,
+          "stepHash": 3018625105,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 3746647075
+        },
+        "3165208825": {
+          "questHash": 3165208825,
+          "stepHash": 3165208825,
+          "stepObjectives": [
+            {
+              "objectiveHash": 667204319,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 2,
+              "hasProgress": true,
+              "isComplete": false
+            }
+          ],
+          "tracked": false,
+          "itemInstanceId": "6917529120180223904",
+          "completed": false,
+          "started": true
+        },
+        "3262574748": {
+          "questHash": 3262574748,
+          "stepHash": 3262574748,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "3340894601": {
+          "questHash": 3340894601,
+          "stepHash": 3340894601,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1889676839
+        },
+        "3746968992": {
+          "questHash": 3746968992,
+          "stepHash": 3746968992,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "3763238212": {
+          "questHash": 3763238212,
+          "stepHash": 3763238212,
+          "stepObjectives": [
+            {
+              "objectiveHash": 2566830135,
+              "destinationHash": 0,
+              "activityHash": 0,
+              "progress": 0,
+              "hasProgress": true,
+              "isComplete": false
+            }
+          ],
+          "tracked": false,
+          "itemInstanceId": "6917529120219221478",
+          "completed": false,
+          "started": true,
+          "vendorHash": 1527174714
+        },
+        "3763238222": {
+          "questHash": 3763238222,
+          "stepHash": 3763238222,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": true,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "3910397531": {
+          "questHash": 3910397531,
+          "stepHash": 3910397531,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "4085991207": {
+          "questHash": 4085991207,
+          "stepHash": 4085991207,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1527174714
+        },
+        "4162172577": {
+          "questHash": 4162172577,
+          "stepHash": 4162172577,
+          "stepObjectives": [],
+          "tracked": false,
+          "itemInstanceId": "0",
+          "completed": false,
+          "started": false,
+          "vendorHash": 1527174714
+        }
+      },
+      "quests": {},
+      "progressions": {
+        "1357277120": {
+          "dailyProgress": 2309,
+          "weeklyProgress": 7969,
+          "currentProgress": 80228,
+          "level": 32,
+          "step": 0,
+          "progressToNextLevel": 1728,
+          "nextLevelAt": 2500,
+          "progressionHash": 1357277120
+        },
+        "2161005788": {
+          "dailyProgress": 0,
+          "weeklyProgress": 0,
+          "currentProgress": 0,
+          "level": 0,
+          "step": 0,
+          "progressToNextLevel": 0,
+          "nextLevelAt": 100,
+          "progressionHash": 2161005788
+        },
+        "2335631936": {
+          "dailyProgress": 0,
+          "weeklyProgress": 0,
+          "currentProgress": 2050,
+          "level": 1,
+          "step": 0,
+          "progressToNextLevel": 550,
+          "nextLevelAt": 1500,
+          "progressionHash": 2335631936
+        },
+        "2576753410": {
+          "dailyProgress": 560,
+          "weeklyProgress": 5490,
+          "currentProgress": 7513,
+          "level": 5,
+          "step": 0,
+          "progressToNextLevel": 763,
+          "nextLevelAt": 1500,
+          "progressionHash": 2576753410
+        },
+        "3233510749": {
+          "dailyProgress": 270,
+          "weeklyProgress": 6130,
+          "currentProgress": 17795,
+          "level": 7,
+          "step": 0,
+          "progressToNextLevel": 1795,
+          "nextLevelAt": 2500,
+          "progressionHash": 3233510749
+        },
+        "3641985238": {
+          "dailyProgress": 115,
+          "weeklyProgress": 175,
+          "currentProgress": 435,
+          "level": 0,
+          "step": 0,
+          "progressToNextLevel": 435,
+          "nextLevelAt": 1000,
+          "progressionHash": 3641985238
+        }
+      },
+      "recordBooks": {
+        "243968262": {
+          "bookHash": 243968262,
+          "records": {
+            "322404552": {
+              "recordHash": 322404552,
+              "objectives": [
+                {
+                  "objectiveHash": 647959370,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 236,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "236"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404553": {
+              "recordHash": 322404553,
+              "objectives": [
+                {
+                  "objectiveHash": 647959371,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 20280,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "20280"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404554": {
+              "recordHash": 322404554,
+              "objectives": [
+                {
+                  "objectiveHash": 647959368,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 248,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "248"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404555": {
+              "recordHash": 322404555,
+              "objectives": [
+                {
+                  "objectiveHash": 647959369,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 45,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "45"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404556": {
+              "recordHash": 322404556,
+              "objectives": [
+                {
+                  "objectiveHash": 647959374,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 48,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "48"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404557": {
+              "recordHash": 322404557,
+              "objectives": [
+                {
+                  "objectiveHash": 647959375,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 154,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "154"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404558": {
+              "recordHash": 322404558,
+              "objectives": [
+                {
+                  "objectiveHash": 647959372,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 21,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "21"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "322404559": {
+              "recordHash": 322404559,
+              "objectives": [
+                {
+                  "objectiveHash": 647959373,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 15,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "15"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542984": {
+              "recordHash": 2023542984,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467318,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 813,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "813"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542985": {
+              "recordHash": 2023542985,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467319,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 292,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "292"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542986": {
+              "recordHash": 2023542986,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467316,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 145,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "145"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542987": {
+              "recordHash": 2023542987,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467317,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 84,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "84"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542988": {
+              "recordHash": 2023542988,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467314,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 385,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "385"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542989": {
+              "recordHash": 2023542989,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467315,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 959,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "959"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542990": {
+              "recordHash": 2023542990,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467312,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 298000,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "4:58.000"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "2023542991": {
+              "recordHash": 2023542991,
+              "objectives": [
+                {
+                  "objectiveHash": 3853467313,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 7,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "7"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3320873840": {
+              "recordHash": 3320873840,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227838,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 20,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "20"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3320873841": {
+              "recordHash": 3320873841,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227839,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": false,
+                  "displayValue": "1"
+                }
+              ],
+              "status": 0,
+              "scramble": false
+            },
+            "3320873842": {
+              "recordHash": 3320873842,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227836,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 4,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "4"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3320873843": {
+              "recordHash": 3320873843,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227837,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 0,
+                  "hasProgress": false,
+                  "isComplete": false,
+                  "displayValue": "0"
+                }
+              ],
+              "status": 0,
+              "scramble": false
+            },
+            "3320873844": {
+              "recordHash": 3320873844,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227834,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3320873845": {
+              "recordHash": 3320873845,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227835,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3320873846": {
+              "recordHash": 3320873846,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227832,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 8,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "8"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3320873847": {
+              "recordHash": 3320873847,
+              "objectives": [
+                {
+                  "objectiveHash": 2295227833,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 36,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "36"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385256": {
+              "recordHash": 4226385256,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939414,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 24,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "24"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385257": {
+              "recordHash": 4226385257,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939415,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 5,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "5"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385258": {
+              "recordHash": 4226385258,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939412,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 457,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "457"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385259": {
+              "recordHash": 4226385259,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939413,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1326,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "1326"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385260": {
+              "recordHash": 4226385260,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939410,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 14,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "14"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385261": {
+              "recordHash": 4226385261,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939411,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 3,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385262": {
+              "recordHash": 4226385262,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939408,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1600,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "1600.00"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "4226385263": {
+              "recordHash": 4226385263,
+              "objectives": [
+                {
+                  "objectiveHash": 2893939409,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 24,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "24"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            }
+          },
+          "progression": {
+            "dailyProgress": 0,
+            "weeklyProgress": 719,
+            "currentProgress": 21570,
+            "level": 22,
+            "step": 0,
+            "progressToNextLevel": 570,
+            "nextLevelAt": 1000,
+            "progressionHash": 3433868304
+          },
+          "completedCount": 30,
+          "redeemedCount": 30,
+          "spotlights": [
+            {
+              "rewardItemHash": 2479679971,
+              "rewardedAtLevel": 2,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 105692437,
+              "rewardedAtLevel": 4,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 1807104308,
+              "rewardedAtLevel": 6,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 2672412973,
+              "rewardedAtLevel": 8,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 242408346,
+              "rewardedAtLevel": 10,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 509454270,
+              "rewardedAtLevel": 12,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 3924653080,
+              "rewardedAtLevel": 14,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 786324256,
+              "rewardedAtLevel": 16,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 4197595974,
+              "rewardedAtLevel": 18,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 691757822,
+              "rewardedAtLevel": 20,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 3345355735,
+              "rewardedAtLevel": 22,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 509454271,
+              "rewardedAtLevel": 24,
+              "quantity": 1,
+              "status": 0
+            }
+          ],
+          "startDate": "2016-09-20T09:00:00Z",
+          "expirationDate": "9999-12-31T23:59:59.999Z"
+        },
+        "2175864601": {
+          "bookHash": 2175864601,
+          "records": {
+            "1872531696": {
+              "recordHash": 1872531696,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531696,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531697": {
+              "recordHash": 1872531697,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531697,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531698": {
+              "recordHash": 1872531698,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531698,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531699": {
+              "recordHash": 1872531699,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531699,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531700": {
+              "recordHash": 1872531700,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531700,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531701": {
+              "recordHash": 1872531701,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531701,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531702": {
+              "recordHash": 1872531702,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531702,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1872531703": {
+              "recordHash": 1872531703,
+              "objectives": [
+                {
+                  "objectiveHash": 1872531703,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "Yes"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            }
+          },
+          "progression": {
+            "dailyProgress": 0,
+            "weeklyProgress": 0,
+            "currentProgress": 4000,
+            "level": 5,
+            "step": 0,
+            "progressToNextLevel": 0,
+            "nextLevelAt": 0,
+            "progressionHash": 2175864601
+          },
+          "completedCount": 8,
+          "redeemedCount": 8,
+          "spotlights": [
+            {
+              "rewardItemHash": 139252900,
+              "rewardedAtLevel": 2,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 2596665930,
+              "rewardedAtLevel": 3,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 139252901,
+              "rewardedAtLevel": 4,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 2596665931,
+              "rewardedAtLevel": 5,
+              "quantity": 1,
+              "status": 2
+            }
+          ]
+        },
+        "3471683641": {
+          "bookHash": 3471683641,
+          "records": {
+            "1211935760": {
+              "recordHash": 1211935760,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977662,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 12,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "12"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935761": {
+              "recordHash": 1211935761,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977663,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 110475,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "110475"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935762": {
+              "recordHash": 1211935762,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977660,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 454,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "454"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935763": {
+              "recordHash": 1211935763,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977661,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 95000,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "95000"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935764": {
+              "recordHash": 1211935764,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977658,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 68,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "68"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935765": {
+              "recordHash": 1211935765,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977659,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 1817475,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "1817475"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935766": {
+              "recordHash": 1211935766,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977656,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 113,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "113"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "1211935767": {
+              "recordHash": 1211935767,
+              "objectives": [
+                {
+                  "objectiveHash": 1212977657,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 23,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "23"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252456": {
+              "recordHash": 3785252456,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063574,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 276680,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "4:36.680"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252457": {
+              "recordHash": 3785252457,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063575,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 86,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "86"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252458": {
+              "recordHash": 3785252458,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063572,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 251269,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "4:11.269"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252459": {
+              "recordHash": 3785252459,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063573,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 5718,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "5718"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252460": {
+              "recordHash": 3785252460,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063570,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 280768,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "4:40.768"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252461": {
+              "recordHash": 3785252461,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063571,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 465,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "465"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252462": {
+              "recordHash": 3785252462,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063568,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 265324,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "4:25.324"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            },
+            "3785252463": {
+              "recordHash": 3785252463,
+              "objectives": [
+                {
+                  "objectiveHash": 2651063569,
+                  "destinationHash": 0,
+                  "activityHash": 0,
+                  "progress": 142,
+                  "hasProgress": true,
+                  "isComplete": true,
+                  "displayValue": "142"
+                }
+              ],
+              "status": 2,
+              "scramble": false
+            }
+          },
+          "progression": {
+            "dailyProgress": 0,
+            "weeklyProgress": 3750,
+            "currentProgress": 10000,
+            "level": 11,
+            "step": 0,
+            "progressToNextLevel": 0,
+            "nextLevelAt": 0,
+            "progressionHash": 2225855327
+          },
+          "completedCount": 16,
+          "redeemedCount": 16,
+          "spotlights": [
+            {
+              "rewardItemHash": 1777175506,
+              "rewardedAtLevel": 2,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 2341358813,
+              "rewardedAtLevel": 3,
+              "quantity": 3,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 1814540603,
+              "rewardedAtLevel": 4,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 946160311,
+              "rewardedAtLevel": 5,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 462131381,
+              "rewardedAtLevel": 6,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 3077092747,
+              "rewardedAtLevel": 7,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 3703598456,
+              "rewardedAtLevel": 8,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 444371609,
+              "rewardedAtLevel": 9,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 1814540602,
+              "rewardedAtLevel": 10,
+              "quantity": 1,
+              "status": 2
+            },
+            {
+              "rewardItemHash": 2979651850,
+              "rewardedAtLevel": 11,
+              "quantity": 1,
+              "status": 2
+            }
+          ],
+          "startDate": "2016-12-13T17:00:00Z",
+          "expirationDate": "9999-12-31T23:59:59.999Z"
+        }
+      }
+    }
+  },
+  "ErrorCode": 1,
+  "ThrottleSeconds": 0,
+  "ErrorStatus": "Success",
+  "Message": "Ok",
+  "MessageData": {}
+}

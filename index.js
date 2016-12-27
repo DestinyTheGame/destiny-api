@@ -1,5 +1,6 @@
 import EventEmitter from 'eventemitter3';
 import modification from 'modification';
+import diagnostics from 'diagnostics';
 import series from 'async/series';
 import failure from 'failure';
 import URL from 'url-parse';
@@ -17,13 +18,17 @@ import UserEndpoint from './endpoints/user';
 //
 import { Characters } from './models';
 
+//
+// Setup our debug utility.
+//
+const debug = diagnostics('destiny-api');
+
 /**
  * Destiny API interactions.
  *
  * Options:
  *
  * - api:       Location of the API server that we're requesting.
- * - key:       Bungie API key.
  * - platform:  Platform (console) that we're using.
  * - username:  Username of your account.
  * - timeout:   Maximum request timeout.
@@ -69,6 +74,8 @@ export default class Destiny extends EventEmitter {
    * @api private
    */
   initialize() {
+    debug('initializing API');
+
     this.on('refresh', function reset(hard) {
       this.change({
         characters: new Characters(this),
@@ -82,6 +89,8 @@ export default class Destiny extends EventEmitter {
     // If there is an error we want to completely nuke all information.
     //
     this.on('error', this.emits('refresh', true));
+    this.on('error', debug);
+
     this.refresh();
   }
 
@@ -91,6 +100,7 @@ export default class Destiny extends EventEmitter {
    * @api private
    */
   refresh() {
+    debug('refreshing our internals');
     this.change({ readystate: Destiny.LOADING }).emit('refresh');
 
     //
@@ -101,6 +111,7 @@ export default class Destiny extends EventEmitter {
       // Phase 1: Get the platform and username from the API.
       //
       user: (next) => {
+        debug('fetching user information');
         this.user.get(next);
       },
 
@@ -109,6 +120,8 @@ export default class Destiny extends EventEmitter {
       // we're ready to process API calls so we set our readyState to complete.
       //
       readystate: (next) => {
+        debug('searching for membership id');
+
         this.user.membership(this.platform, this.username, (err, data) => {
           if (err) return next(err);
 
@@ -125,6 +138,8 @@ export default class Destiny extends EventEmitter {
       // Phase 3: Get all characters for the given membership id.
       //
       account: (next) => {
+        debug('retrieving all chars for the membership id');
+
         this.user.account(this.platform, this.id, (err, data) => {
           if (err) return next(err);
 
@@ -178,6 +193,8 @@ export default class Destiny extends EventEmitter {
     // login or additional account information.
     //
     if (!options.bypass && this.readystate !== Destiny.COMPLETE) {
+      debug('queue api call for %s, readyState is not yet complete', options.url);
+
       return this.once('refreshed', function refreshed(err) {
         if (err) return fn(err);
 
@@ -193,13 +210,13 @@ export default class Destiny extends EventEmitter {
     // Setup the XHR request with the correct formatted URL.
     //
     const xhr = new this.XHR();
-    const format = options.format || {};
+    const template = options.template || {};
     const using = Object.assign({ method: 'GET' }, options || {});
     const url =  this.format(using.url, Object.assign({
-      displayName: format.displayName || this.username,
-      destinyMembershipId: format.destinyMembershipId || this.id,
-      membershipType: format.membershipType || this.console()
-    }, format));
+      displayName: template.displayName || this.username,
+      destinyMembershipId: template.destinyMembershipId || this.id,
+      membershipType: template.membershipType || this.console()
+    }, template));
 
     xhr.open(using.method, url.href, true);
     xhr.timeout = this.timeout;
@@ -234,11 +251,13 @@ export default class Destiny extends EventEmitter {
       // going to assume that 0 and 1 are both valid values.
       //
       if (data.ErrorCode > 1) {
+        debug('we received an error code (%s) from the bungie api for %s', data.ErrorCode, url.href);
         //
         // We've reached the throttle limit, so we should defer the request until
         // we're allowed to request again.
         //
         if (data.ErrorCode === 36) {
+          debug('reached throttle limit, rescheduling API call');
           return setTimeout(send.bind(this, options, fn), 1000 * data.ThrottleSeconds);
         }
 
@@ -246,6 +265,7 @@ export default class Destiny extends EventEmitter {
         // At this point we don't really know what kind of error we received so we
         // should fail hard and return a new error object.
         //
+        debug('received an error from the api: %s', data.Message);
         return fn(failure(data.Message, data));
       }
 
@@ -262,12 +282,16 @@ export default class Destiny extends EventEmitter {
     // secured API's
     //
     this.bungie.token((err, payload) => {
-      if (err) return fn(err);
+      if (err) {
+        debug('failed to retreive an accessToken: %s', err.message);
+        return fn(err);
+      }
 
       xhr.setRequestHeader('X-API-Key', this.bungie.config.key);
       xhr.setRequestHeader('x-requested-with', 'XMLHttpRequest');
       xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
 
+      debug('send API request to %s', url.href);
       xhr.send(using.body);
     });
 
@@ -330,7 +354,7 @@ export default class Destiny extends EventEmitter {
 }
 
 /**
- * Define an lazyload new API's.
+ * Define an lazy load new API's.
  *
  * @param {String} name The name of the property
  * @param {Function} fn The function that returns the new value

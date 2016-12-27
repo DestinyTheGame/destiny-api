@@ -1,3 +1,10 @@
+import diagnostics from 'diagnostics';
+
+//
+// Setup our debug utility.
+//
+const debug = diagnostics('destiny-api:model:character');
+
 /**
  * Representation of one of our Destiny characters.
  *

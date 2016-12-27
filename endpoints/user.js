@@ -1,3 +1,10 @@
+import diagnostics from 'diagnostics';
+
+//
+// Setup our debug utility.
+//
+const debug = diagnostics('destiny-api:api:characters');
+
 /**
  * The API for interacting with the user account details.
  *
@@ -76,7 +83,7 @@ export default class User {
   id(membershipId) {
     return this.destiny.send({
       url: 'User/GetBungieNetUserById/{id}/',
-      format: {
+      template: {
         id: membershipId
       }
     }, fn);
@@ -92,7 +99,7 @@ export default class User {
   search(username, fn) {
     return this.destiny.send({
       url: 'User/SearchUsers/?q={search}',
-      format: {
+      template: {
         search: username
       }
     }, fn);
@@ -110,7 +117,7 @@ export default class User {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Stats/GetMembershipIdByDisplayName/{displayName}/',
       bypass: true,
-      format: {
+      template: {
         membershipType: this.destiny.console(platform),
         displayName: username
       }
@@ -130,7 +137,7 @@ export default class User {
       url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Summary/',
       bypass: true,
       filter: 'data',
-      format: {
+      template: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id
       }
@@ -148,7 +155,7 @@ export default class User {
   advisors(platform, id, fn) {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Advisors/',
-      format: {
+      template: {
         destinyMembershipType: this.destiny.console(platform, true),
         destinyMembershipId: id
       }

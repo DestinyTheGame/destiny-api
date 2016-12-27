@@ -1,11 +1,29 @@
+import { XMLHttpRequest } from 'xmlhttprequest';
 import { Characters } from '../models';
+import auth from './bungie-auth';
 import assume from 'assume';
+import Destiny from '../';
+import mock from './mock';
 
 describe('characters', function () {
-  const destiny = { /* Fake Destiny class instance */ };
+  const destiny = new Destiny(auth, {
+    XHR: XMLHttpRequest
+  });
 
   it('is a function', function () {
     assume(Characters).is.a('function');
+  });
+
+  describe('#refresh', function () {
+    it('updates the internal dataset', function (next) {
+      const characters = new Characters(destiny);
+
+      characters.once('update', function () {
+        next();
+      });
+
+      characters.refresh();
+    });
   });
 
   describe('#set', function () {

@@ -4,7 +4,7 @@
   "description": "Destiny API through bungie.net",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register ./test/*.test.js"
+    "test": "mocha --require babel-ignore/install ./test/*.test.js"
   },
   "keywords": [
     "bungie",
@@ -16,6 +16,7 @@
   "dependencies": {
     "async": "2.1.x",
     "babel-preset-es2015": "6.18.x",
+    "diagnostics": "1.1.0",
     "emits": "3.0.x",
     "eventemitter3": "2.0.x",
     "extendible": "0.1.x",
@@ -24,14 +25,17 @@
     "modification": "1.0.x",
     "propget": "1.0.x",
     "tick-tock": "1.0.0",
-    "url-parse": "1.1.x",
-    "xmlhttprequest": "1.8.x"
+    "url-parse": "1.1.x"
   },
   "devDependencies": {
     "assume": "1.4.x",
+    "babel-ignore": "2.0.1",
     "babel-register": "6.18.x",
     "mocha": "3.2.x",
-    "pre-commit": "1.2.x"
+    "nock": "9.0.x",
+    "nock-knock": "1.0.x",
+    "pre-commit": "1.2.x",
+    "xmlhttprequest": "1.8.x"
   },
   "babel-ignore": false,
   "babel": {

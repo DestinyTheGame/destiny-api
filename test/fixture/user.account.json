@@ -1,0 +1,5426 @@
+{
+  "Response": {
+    "data": {
+      "membershipId": "4611686018460255011",
+      "membershipType": 2,
+      "characters": [
+        {
+          "characterBase": {
+            "membershipId": "4611686018460255011",
+            "membershipType": 2,
+            "characterId": "2305843009411105773",
+            "dateLastPlayed": "2016-12-27T02:18:25Z",
+            "minutesPlayedThisSession": "162",
+            "minutesPlayedTotal": "8291",
+            "powerLevel": 400,
+            "raceHash": 2803282938,
+            "genderHash": 2204441813,
+            "classHash": 671679327,
+            "currentActivityHash": 1390160729,
+            "lastCompletedStoryHash": 0,
+            "stats": {
+              "STAT_DEFENSE": {
+                "statHash": 3897883278,
+                "value": 0,
+                "maximumValue": 0
+              },
+              "STAT_INTELLECT": {
+                "statHash": 144602215,
+                "value": 298,
+                "maximumValue": 0
+              },
+              "STAT_DISCIPLINE": {
+                "statHash": 1735777505,
+                "value": 250,
+                "maximumValue": 0
+              },
+              "STAT_STRENGTH": {
+                "statHash": 4244567218,
+                "value": 169,
+                "maximumValue": 0
+              },
+              "STAT_LIGHT": {
+                "statHash": 2391494160,
+                "value": 400,
+                "maximumValue": 0
+              },
+              "STAT_ARMOR": {
+                "statHash": 392767087,
+                "value": 8,
+                "maximumValue": 0
+              },
+              "STAT_AGILITY": {
+                "statHash": 2996146975,
+                "value": 5,
+                "maximumValue": 0
+              },
+              "STAT_RECOVERY": {
+                "statHash": 1943323491,
+                "value": 4,
+                "maximumValue": 0
+              },
+              "STAT_OPTICS": {
+                "statHash": 3555269338,
+                "value": 50,
+                "maximumValue": 0
+              }
+            },
+            "customization": {
+              "personality": 2166136261,
+              "face": 2695914758,
+              "skinColor": 1815484269,
+              "lipColor": 2571618617,
+              "eyeColor": 1511637752,
+              "hairColor": 807793003,
+              "featureColor": 2166136261,
+              "decalColor": 1609827958,
+              "wearHelmet": false,
+              "hairIndex": 14,
+              "featureIndex": 0,
+              "decalIndex": 8
+            },
+            "grimoireScore": 4055,
+            "peerView": {
+              "equipment": [
+                {
+                  "itemHash": 2962927168,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 1149751883,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2217280774,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3572302285,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 728377844,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 4040397782,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2897238917,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 1989001289
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 4062976594
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1419914235,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 2489424275
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 2493048396
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2072624878,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 496471919
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 2067951160
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3011919237,
+                  "dyes": [
+                    {
+                      "channelHash": 284967655,
+                      "dyeHash": 1814675473
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 4083935130,
+                  "dyes": [
+                    {
+                      "channelHash": 2025709351,
+                      "dyeHash": 922343045
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 4158489060,
+                  "dyes": [
+                    {
+                      "channelHash": 4023194814,
+                      "dyeHash": 1371269967
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1325965972,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 4197595974,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2138738978,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 1211877745
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 940102832
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 3720760495
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3143956505,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 2672107542,
+                  "dyes": []
+                }
+              ]
+            },
+            "genderType": 1,
+            "classType": 1,
+            "buildStatGroupHash": 3457215711
+          },
+          "levelProgression": {
+            "dailyProgress": 0,
+            "weeklyProgress": 0,
+            "currentProgress": 346000,
+            "level": 40,
+            "step": 0,
+            "progressToNextLevel": 0,
+            "nextLevelAt": 0,
+            "progressionHash": 1716568313
+          },
+          "emblemPath": "/common/destiny_content/icons/91c40e6a83434d0e07be8b8713c7c03a.jpg",
+          "backgroundPath": "/common/destiny_content/icons/995709b6fd7d625367c52e1dd48c4500.jpg",
+          "emblemHash": 1325965972,
+          "characterLevel": 40,
+          "baseCharacterLevel": 40,
+          "isPrestigeLevel": false,
+          "percentToNextLevel": 0
+        },
+        {
+          "characterBase": {
+            "membershipId": "4611686018460255011",
+            "membershipType": 2,
+            "characterId": "2305843009389427638",
+            "dateLastPlayed": "2016-12-26T23:35:52Z",
+            "minutesPlayedThisSession": "75",
+            "minutesPlayedTotal": "25226",
+            "powerLevel": 399,
+            "raceHash": 2803282938,
+            "genderHash": 2204441813,
+            "classHash": 671679327,
+            "currentActivityHash": 892266083,
+            "lastCompletedStoryHash": 0,
+            "stats": {
+              "STAT_DEFENSE": {
+                "statHash": 3897883278,
+                "value": 0,
+                "maximumValue": 0
+              },
+              "STAT_INTELLECT": {
+                "statHash": 144602215,
+                "value": 190,
+                "maximumValue": 0
+              },
+              "STAT_DISCIPLINE": {
+                "statHash": 1735777505,
+                "value": 107,
+                "maximumValue": 0
+              },
+              "STAT_STRENGTH": {
+                "statHash": 4244567218,
+                "value": 272,
+                "maximumValue": 0
+              },
+              "STAT_LIGHT": {
+                "statHash": 2391494160,
+                "value": 399,
+                "maximumValue": 0
+              },
+              "STAT_ARMOR": {
+                "statHash": 392767087,
+                "value": 8,
+                "maximumValue": 0
+              },
+              "STAT_AGILITY": {
+                "statHash": 2996146975,
+                "value": 5,
+                "maximumValue": 0
+              },
+              "STAT_RECOVERY": {
+                "statHash": 1943323491,
+                "value": 4,
+                "maximumValue": 0
+              },
+              "STAT_OPTICS": {
+                "statHash": 3555269338,
+                "value": 44,
+                "maximumValue": 0
+              }
+            },
+            "customization": {
+              "personality": 2166136261,
+              "face": 2695914753,
+              "skinColor": 1815484268,
+              "lipColor": 2571618617,
+              "eyeColor": 1511637751,
+              "hairColor": 1741933332,
+              "featureColor": 2166136261,
+              "decalColor": 1609827955,
+              "wearHelmet": false,
+              "hairIndex": 14,
+              "featureIndex": 0,
+              "decalIndex": 8
+            },
+            "grimoireScore": 4055,
+            "peerView": {
+              "equipment": [
+                {
+                  "itemHash": 4143670657,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 2747259661,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 446517955,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 201220485,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1394543945,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3152205784,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 320170739,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 2296130347
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 3059724228
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2904362064,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 45558998
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 4228675965
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2878293129,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 4214683825
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 919238202
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3011919237,
+                  "dyes": [
+                    {
+                      "channelHash": 284967655,
+                      "dyeHash": 1814675473
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 727947049,
+                  "dyes": [
+                    {
+                      "channelHash": 2025709351,
+                      "dyeHash": 1996423973
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 2360294838,
+                  "dyes": [
+                    {
+                      "channelHash": 4023194814,
+                      "dyeHash": 966710209
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1325965974,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 3060686471,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 4224622064,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 891684227
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1946083182
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 1154218581
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 452104881,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 2242042664,
+                  "dyes": []
+                }
+              ]
+            },
+            "genderType": 1,
+            "classType": 1,
+            "buildStatGroupHash": 3155986019
+          },
+          "levelProgression": {
+            "dailyProgress": 0,
+            "weeklyProgress": 0,
+            "currentProgress": 346000,
+            "level": 40,
+            "step": 0,
+            "progressToNextLevel": 0,
+            "nextLevelAt": 0,
+            "progressionHash": 1716568313
+          },
+          "emblemPath": "/common/destiny_content/icons/51ad72ca32fbdbd1d087407c50e7fe71.jpg",
+          "backgroundPath": "/common/destiny_content/icons/d3359e1c49df7c0dbfdcaf57bd23de96.jpg",
+          "emblemHash": 1325965974,
+          "characterLevel": 40,
+          "baseCharacterLevel": 40,
+          "isPrestigeLevel": false,
+          "percentToNextLevel": 0
+        },
+        {
+          "characterBase": {
+            "membershipId": "4611686018460255011",
+            "membershipType": 2,
+            "characterId": "2305843009399275119",
+            "dateLastPlayed": "2016-12-26T21:44:17Z",
+            "minutesPlayedThisSession": "0",
+            "minutesPlayedTotal": "9610",
+            "powerLevel": 400,
+            "raceHash": 898834093,
+            "genderHash": 2204441813,
+            "classHash": 671679327,
+            "currentActivityHash": 0,
+            "lastCompletedStoryHash": 0,
+            "stats": {
+              "STAT_DEFENSE": {
+                "statHash": 3897883278,
+                "value": 0,
+                "maximumValue": 0
+              },
+              "STAT_INTELLECT": {
+                "statHash": 144602215,
+                "value": 81,
+                "maximumValue": 0
+              },
+              "STAT_DISCIPLINE": {
+                "statHash": 1735777505,
+                "value": 219,
+                "maximumValue": 0
+              },
+              "STAT_STRENGTH": {
+                "statHash": 4244567218,
+                "value": 205,
+                "maximumValue": 0
+              },
+              "STAT_LIGHT": {
+                "statHash": 2391494160,
+                "value": 400,
+                "maximumValue": 0
+              },
+              "STAT_ARMOR": {
+                "statHash": 392767087,
+                "value": 8,
+                "maximumValue": 0
+              },
+              "STAT_AGILITY": {
+                "statHash": 2996146975,
+                "value": 5,
+                "maximumValue": 0
+              },
+              "STAT_RECOVERY": {
+                "statHash": 1943323491,
+                "value": 4,
+                "maximumValue": 0
+              },
+              "STAT_OPTICS": {
+                "statHash": 3555269338,
+                "value": 54,
+                "maximumValue": 0
+              }
+            },
+            "customization": {
+              "personality": 2166136261,
+              "face": 2552882595,
+              "skinColor": 2859159809,
+              "lipColor": 1955118882,
+              "eyeColor": 4187018146,
+              "hairColor": 2324992805,
+              "featureColor": 2166136261,
+              "decalColor": 3189098204,
+              "wearHelmet": false,
+              "hairIndex": 7,
+              "featureIndex": 0,
+              "decalIndex": 7
+            },
+            "grimoireScore": 4055,
+            "peerView": {
+              "equipment": [
+                {
+                  "itemHash": 1716862031,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 2364921277,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3909166968,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1811367950,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1775312683,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3152205784,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1026578963,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 1005223371
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 1768714084
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3622856851,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 3473996107
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 4237486820
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 330048677,
+                  "dyes": [
+                    {
+                      "channelHash": 1667433279,
+                      "dyeHash": 1344702733
+                    },
+                    {
+                      "channelHash": 1667433278,
+                      "dyeHash": 3791767590
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3011919237,
+                  "dyes": [
+                    {
+                      "channelHash": 284967655,
+                      "dyeHash": 1814675473
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 4083935135,
+                  "dyes": [
+                    {
+                      "channelHash": 2025709351,
+                      "dyeHash": 338164730
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1960785498,
+                  "dyes": [
+                    {
+                      "channelHash": 4023194814,
+                      "dyeHash": 1960785498
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1777175504,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 407626698,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 1716835624,
+                  "dyes": [
+                    {
+                      "channelHash": 662199250,
+                      "dyeHash": 3009536845
+                    },
+                    {
+                      "channelHash": 1367384683,
+                      "dyeHash": 1240901764
+                    },
+                    {
+                      "channelHash": 218592586,
+                      "dyeHash": 767767363
+                    }
+                  ]
+                },
+                {
+                  "itemHash": 3143956510,
+                  "dyes": []
+                },
+                {
+                  "itemHash": 2242042664,
+                  "dyes": []
+                }
+              ]
+            },
+            "genderType": 1,
+            "classType": 1,
+            "buildStatGroupHash": 633635316
+          },
+          "levelProgression": {
+            "dailyProgress": 0,
+            "weeklyProgress": 0,
+            "currentProgress": 346000,
+            "level": 40,
+            "step": 0,
+            "progressToNextLevel": 0,
+            "nextLevelAt": 0,
+            "progressionHash": 1716568313
+          },
+          "emblemPath": "/common/destiny_content/icons/dd1db1a8aed66f77a0dbb3b5d9363747.jpg",
+          "backgroundPath": "/common/destiny_content/icons/3ead74d17627de157f35d11c0958250c.jpg",
+          "emblemHash": 1777175504,
+          "characterLevel": 40,
+          "baseCharacterLevel": 40,
+          "isPrestigeLevel": false,
+          "percentToNextLevel": 0
+        }
+      ],
+      "inventory": {
+        "items": [
+          {
+            "itemHash": 1751420457,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 1367666825
+          },
+          {
+            "itemHash": 2360768126,
+            "itemId": "6917529095699193015",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 2,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 2987185182
+          },
+          {
+            "itemHash": 271410367,
+            "itemId": "6917529095697454706",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 2,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 549485690
+          },
+          {
+            "itemHash": 2225855327,
+            "itemId": "6917529118403920617",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 2,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 549485690
+          },
+          {
+            "itemHash": 2188828890,
+            "itemId": "6917529094723907206",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1294420134,
+            "itemId": "6917529112092708182",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2300914892,
+            "itemId": "6917529090486028089",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 850974178,
+            "itemId": "6917529117816337721",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 850974178,
+            "itemId": "6917529117824732192",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 773948710,
+            "itemId": "6917529118440266255",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1149751883,
+            "itemId": "6917529118301868637",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1292884101,
+            "itemId": "6917529094387378152",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 500381837,
+            "itemId": "6917529099799841484",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1823306243,
+            "itemId": "6917529116891089733",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3324900039,
+            "itemId": "6917529113683254691",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1294420134,
+            "itemId": "6917529117923683937",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529104037645359",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 386,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 373830470,
+            "itemId": "6917529110762696715",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1832828137,
+            "itemId": "6917529099223960388",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3282867245,
+            "itemId": "6917529108547076665",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 4245184949,
+            "itemId": "6917529101162781263",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1811367950,
+            "itemId": "6917529116538958879",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529103940528876",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3282867245,
+            "itemId": "6917529112295488554",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3593684385,
+            "itemId": "6917529107219422504",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2129462487,
+            "itemId": "6917529111806730392",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1648442595,
+            "itemId": "6917529116568057161",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 271372403,
+            "itemId": "6917529111494217349",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3957443386,
+            "itemId": "6917529101587021310",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3342415802,
+            "itemId": "6917529107671274226",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 384,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2240991371,
+            "itemId": "6917529108476321106",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2237496545,
+            "itemId": "6917529091854777891",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 130,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1311512974,
+            "itemId": "6917529100690779987",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2055339190,
+            "itemId": "6917529101011761880",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 384,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1811367950,
+            "itemId": "6917529115699397667",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 632341,
+            "itemId": "6917529104344895393",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3934967423,
+            "itemId": "6917529117607407858",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529114023433970",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 728377844,
+            "itemId": "6917529117419091665",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 661529958,
+            "itemId": "6917529117711129634",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3915931143,
+            "itemId": "6917529114338127671",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 4005263627,
+            "itemId": "6917529101058348582",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529114373108451",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 728377844,
+            "itemId": "6917529116407265065",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1648442595,
+            "itemId": "6917529109495164098",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1207988981,
+            "itemId": "6917529111029393587",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529114338129416",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2021783917,
+            "itemId": "6917529109466884138",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1047302227,
+            "itemId": "6917529106697141239",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 691310312,
+            "itemId": "6917529099220207007",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 399,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2242715339,
+            "itemId": "6917529091785711424",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 334,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3461067991,
+            "itemId": "6917529118308007583",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 271372403,
+            "itemId": "6917529112311501771",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1648442595,
+            "itemId": "6917529115896872706",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1954673442,
+            "itemId": "6917529101177348569",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 384,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 149041867,
+            "itemId": "6917529104648643704",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1054763959,
+            "itemId": "6917529108837645873",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2833532020,
+            "itemId": "6917529119565827747",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3653819065,
+            "itemId": "6917529095558834061",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 283,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1149751883,
+            "itemId": "6917529113342245785",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3750335743,
+            "itemId": "6917529101139242251",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 386,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3461067991,
+            "itemId": "6917529111859506650",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 201220485,
+            "itemId": "6917529114019411529",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 458800603,
+            "itemId": "6917529100382003886",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 201220485,
+            "itemId": "6917529114387569712",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1811367950,
+            "itemId": "6917529116783681032",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 554244708,
+            "itemId": "6917529094520463078",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 386,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 201220485,
+            "itemId": "6917529114029619014",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 271372403,
+            "itemId": "6917529119299939034",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1823306242,
+            "itemId": "6917529103970209077",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 384,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 4245184949,
+            "itemId": "6917529116900587662",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1386707187,
+            "itemId": "6917529090935491685",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 335,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3593684385,
+            "itemId": "6917529097809594466",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 371,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2917379817,
+            "itemId": "6917529101185598165",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 387,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3380804975,
+            "itemId": "6917529109114724306",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 501878012,
+            "itemId": "6917529119677278204",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 288017098,
+            "itemId": "6917529116580212401",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 288017098,
+            "itemId": "6917529107661354595",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3342415802,
+            "itemId": "6917529111838427112",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3282867245,
+            "itemId": "6917529103996332500",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3653819065,
+            "itemId": "6917529091870276808",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 286,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1149751883,
+            "itemId": "6917529119963683978",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 661529959,
+            "itemId": "6917529109889647186",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1937895860,
+            "itemId": "6917529117404908234",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529114172217752",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1648442595,
+            "itemId": "6917529105378998230",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 386,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3461067991,
+            "itemId": "6917529108188858357",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1811367950,
+            "itemId": "6917529111784634522",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2882684153,
+            "itemId": "6917529110741376937",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3750335743,
+            "itemId": "6917529111221314064",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 480802661,
+            "itemId": "6917529114580056219",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 288017098,
+            "itemId": "6917529117421272061",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 691310312,
+            "itemId": "6917529103966181674",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3915931143,
+            "itemId": "6917529114154925915",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 773948710,
+            "itemId": "6917529119681407380",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 3,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 380709696,
+            "itemId": "6917529116392402682",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3232045548,
+            "itemId": "6917529120170432213",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1047302226,
+            "itemId": "6917529116900584973",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1574664,
+            "itemId": "6917529106417712926",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1943318157,
+            "itemId": "6917529118444268490",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1386707187,
+            "itemId": "6917529094588575879",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 293,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1811367950,
+            "itemId": "6917529117167367130",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 691310313,
+            "itemId": "6917529110683575064",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1665256925,
+            "itemId": "6917529104338596996",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 386,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 728377844,
+            "itemId": "6917529112313363089",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 728377844,
+            "itemId": "6917529102302076347",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 3273710512,
+            "itemId": "6917529117300588283",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 1149751883,
+            "itemId": "6917529117516218104",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 3003523923
+          },
+          {
+            "itemHash": 2666891171,
+            "itemId": "6917529094231023277",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 330,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4091910571,
+            "itemId": "6917529095866815431",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 55,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 958238921,
+            "itemId": "6917529104662903089",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 386,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2001493563,
+            "itemId": "6917529110991250623",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1760735824,
+            "itemId": "6917529113857783211",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 190731588,
+            "itemId": "6917529096563846424",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 170,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1200540134,
+            "itemId": "6917529098635107043",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 358,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1592913758,
+            "itemId": "6917529116426100507",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1201310194,
+            "itemId": "6917529099302900715",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3768542598,
+            "itemId": "6917529114005615905",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 602786655,
+            "itemId": "6917529109887361547",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3490124916,
+            "itemId": "6917529118218266713",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4068577415,
+            "itemId": "6917529119944651975",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3507397980,
+            "itemId": "6917529118600886223",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1356058856,
+            "itemId": "6917529097279157117",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 170,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 263993300,
+            "itemId": "6917529092033340313",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 286,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1037965300,
+            "itemId": "6917529090486030979",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 5,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3366907657,
+            "itemId": "6917529111828133315",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2869186762,
+            "itemId": "6917529100827577504",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1026578963,
+            "itemId": "6917529117632140011",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 93647184,
+            "itemId": "6917529090920761741",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2413549607,
+            "itemId": "6917529104308152447",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3904467563,
+            "itemId": "6917529107277817169",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2897238917,
+            "itemId": "6917529094233944585",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2125403517,
+            "itemId": "6917529108821010066",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3491886958,
+            "itemId": "6917529094927880343",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1201310194,
+            "itemId": "6917529113978810167",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2205574383,
+            "itemId": "6917529104018631637",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3622856851,
+            "itemId": "6917529116146843625",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 100397241,
+            "itemId": "6917529117161072672",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1201310194,
+            "itemId": "6917529101570289672",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4023897205,
+            "itemId": "6917529118771946448",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2609120348,
+            "itemId": "6917529112675074551",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 104,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1013852375,
+            "itemId": "6917529090487449305",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 42,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4011143908,
+            "itemId": "6917529097438056400",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3172428255,
+            "itemId": "6917529113958515040",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2055601062,
+            "itemId": "6917529092578604732",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 791351720,
+            "itemId": "6917529094366385717",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 381,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1703777169,
+            "itemId": "6917529118921908087",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1387145760,
+            "itemId": "6917529098842656457",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3768542598,
+            "itemId": "6917529114038249127",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4114401057,
+            "itemId": "6917529120170438462",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1200540134,
+            "itemId": "6917529120180224932",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2999797736,
+            "itemId": "6917529114031787592",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2878293129,
+            "itemId": "6917529113976420324",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2154053164,
+            "itemId": "6917529109887353015",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2897238917,
+            "itemId": "6917529094533082673",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 100397241,
+            "itemId": "6917529116806033807",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1592913758,
+            "itemId": "6917529117437385908",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1642033471,
+            "itemId": "6917529120168630052",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2790109143,
+            "itemId": "6917529091847301866",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2790109143,
+            "itemId": "6917529101516347813",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3667595457,
+            "itemId": "6917529090869331735",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 160,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3275615580,
+            "itemId": "6917529100304580320",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 486279087,
+            "itemId": "6917529091044571314",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 334,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1742712674,
+            "itemId": "6917529091309491736",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1305525274,
+            "itemId": "6917529117144880363",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3904536202,
+            "itemId": "6917529092580111191",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 333,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 261727865,
+            "itemId": "6917529100232776852",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 113,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4023897205,
+            "itemId": "6917529118209810688",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1398798172,
+            "itemId": "6917529113683253055",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 958238921,
+            "itemId": "6917529117624352394",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2748310063,
+            "itemId": "6917529113978810775",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1013852373,
+            "itemId": "6917529102820594654",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 42,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1027613438,
+            "itemId": "6917529120272817609",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1287343925,
+            "itemId": "6917529096879137293",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2999797736,
+            "itemId": "6917529114003596157",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1604125378,
+            "itemId": "6917529092570140229",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 330,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 341708370,
+            "itemId": "6917529094041504199",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 334,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1272989272,
+            "itemId": "6917529094092113043",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3863768569,
+            "itemId": "6917529095353810566",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2743154321,
+            "itemId": "6917529095557881081",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3366907657,
+            "itemId": "6917529117516215277",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1703777169,
+            "itemId": "6917529091041657816",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1264422556,
+            "itemId": "6917529092565922063",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3172428255,
+            "itemId": "6917529116392409910",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1173766590,
+            "itemId": "6917529117421278063",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2890371726,
+            "itemId": "6917529117635858923",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2999797736,
+            "itemId": "6917529114038246246",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 419189652,
+            "itemId": "6917529104912795798",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2748310063,
+            "itemId": "6917529115707466267",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2878293129,
+            "itemId": "6917529114003596335",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1026578963,
+            "itemId": "6917529118309945310",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4068577415,
+            "itemId": "6917529112470949356",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 48423572,
+            "itemId": "6917529109497123456",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1201310194,
+            "itemId": "6917529091571565299",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1132793057,
+            "itemId": "6917529091719711588",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 335,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 255654879,
+            "itemId": "6917529109497129471",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2878293129,
+            "itemId": "6917529114001646579",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2321310309,
+            "itemId": "6917529094794997993",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2904362064,
+            "itemId": "6917529111796712792",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 4011143908,
+            "itemId": "6917529091985442955",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 354,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1505957929,
+            "itemId": "6917529094031229048",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3629543169,
+            "itemId": "6917529092565926034",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 280,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2210820431,
+            "itemId": "6917529096574888496",
+            "quantity": 1,
+            "damageType": 1,
+            "damageTypeHash": 3373582085,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 170,
+              "maximumValue": 0
+            },
+            "isGridComplete": true,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 791351720,
+            "itemId": "6917529115862962905",
+            "quantity": 1,
+            "damageType": 3,
+            "damageTypeHash": 1847026933,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 390,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2878293129,
+            "itemId": "6917529113970681968",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 3598793896,
+            "itemId": "6917529117603489280",
+            "quantity": 1,
+            "damageType": 4,
+            "damageTypeHash": 3454344768,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 2878293129,
+            "itemId": "6917529113966627921",
+            "quantity": 1,
+            "damageType": 2,
+            "damageTypeHash": 2303181850,
+            "primaryStat": {
+              "statHash": 368428387,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 4046403665
+          },
+          {
+            "itemHash": 1503687614,
+            "itemId": "0",
+            "quantity": 4,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1031221143,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3705287267,
+            "itemId": "0",
+            "quantity": 22,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3705287266,
+            "itemId": "0",
+            "quantity": 22,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3705287265,
+            "itemId": "0",
+            "quantity": 20,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3705287264,
+            "itemId": "0",
+            "quantity": 20,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 894761026,
+            "itemId": "0",
+            "quantity": 12,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 894761027,
+            "itemId": "0",
+            "quantity": 12,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1542293174,
+            "itemId": "0",
+            "quantity": 2855,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 894761024,
+            "itemId": "0",
+            "quantity": 7,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1001256553,
+            "itemId": "0",
+            "quantity": 2,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2751204699,
+            "itemId": "6917529090484655591",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 5,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1932910919,
+            "itemId": "0",
+            "quantity": 20,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1556533319,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3026483582,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3242866270,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3242866270,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1797491610,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1797491610,
+            "itemId": "0",
+            "quantity": 117,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2672107539,
+            "itemId": "6917529108569223067",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3345355735,
+            "itemId": "0",
+            "quantity": 10,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 937024528,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2838906412,
+            "itemId": "0",
+            "quantity": 4,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 937024529,
+            "itemId": "0",
+            "quantity": 3,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1503687615,
+            "itemId": "0",
+            "quantity": 2,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2670104628,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 211861343,
+            "itemId": "0",
+            "quantity": 22,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1898539128,
+            "itemId": "0",
+            "quantity": 6278,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 269776572,
+            "itemId": "0",
+            "quantity": 55,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2904517731,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2254123540,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3606232300,
+            "itemId": "6917529091261740487",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 322,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2254123540,
+            "itemId": "0",
+            "quantity": 179,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3077260837,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 417308266,
+            "itemId": "0",
+            "quantity": 115,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3077260836,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1411992893,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1411992892,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1411992894,
+            "itemId": "0",
+            "quantity": 3,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1001256555,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1001256552,
+            "itemId": "0",
+            "quantity": 5,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2206724918,
+            "itemId": "0",
+            "quantity": 6,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2026036813,
+            "itemId": "6917529119944654943",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2672107538,
+            "itemId": "6917529101166980349",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 400,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 4158489060,
+            "itemId": "6917529094383419743",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 335,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2801714430,
+            "itemId": "6917529095426864747",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 333,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 452597397,
+            "itemId": "0",
+            "quantity": 48,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2882093969,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2882093969,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2882093969,
+            "itemId": "0",
+            "quantity": 200,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2815148216,
+            "itemId": "6917529094727808487",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 285,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2601212255,
+            "itemId": "0",
+            "quantity": 5,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2801714428,
+            "itemId": "6917529091335891949",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 324,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1603376703,
+            "itemId": "0",
+            "quantity": 30,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1458765388,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2801714428,
+            "itemId": "6917529091335894018",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 324,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2815148216,
+            "itemId": "6917529091928249115",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 287,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 27771123,
+            "itemId": "6917529092033338975",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 300,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 4158489060,
+            "itemId": "6917529094364467920",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 335,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2801714428,
+            "itemId": "6917529096831005927",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 335,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 27771123,
+            "itemId": "6917529091722557271",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 329,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3815757277,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2715326881,
+            "itemId": "6917529097535824462",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1807104308,
+            "itemId": "6917529099321142881",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 365,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1350048973,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3389648702,
+            "itemId": "6917529099222162932",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 372,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 1,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1738186005,
+            "itemId": "0",
+            "quantity": 660,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 1826822442,
+            "itemId": "0",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 730655315,
+            "itemId": "0",
+            "quantity": 8,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 2691519029,
+            "itemId": "6917529120176457957",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 385,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3542867423,
+            "itemId": "6917529091334434707",
+            "quantity": 1,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "primaryStat": {
+              "statHash": 3897883278,
+              "value": 320,
+              "maximumValue": 0
+            },
+            "isGridComplete": false,
+            "transferStatus": 0,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 138197802
+          },
+          {
+            "itemHash": 3159615086,
+            "itemId": "0",
+            "quantity": 16944,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 2,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 2689798308
+          },
+          {
+            "itemHash": 2534352370,
+            "itemId": "0",
+            "quantity": 65,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 2,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 2689798304
+          },
+          {
+            "itemHash": 2749350776,
+            "itemId": "0",
+            "quantity": 2500,
+            "damageType": 0,
+            "damageTypeHash": 0,
+            "isGridComplete": false,
+            "transferStatus": 2,
+            "state": 0,
+            "characterIndex": -1,
+            "bucketHash": 2689798311
+          }
+        ],
+        "currencies": [
+          {
+            "itemHash": 3159615086,
+            "value": 16944
+          },
+          {
+            "itemHash": 2534352370,
+            "value": 65
+          },
+          {
+            "itemHash": 2749350776,
+            "value": 2500
+          }
+        ]
+      },
+      "grimoireScore": 4055,
+      "versions": 15
+    }
+  },
+  "ErrorCode": 1,
+  "ThrottleSeconds": 0,
+  "ErrorStatus": "Success",
+  "Message": "Ok",
+  "MessageData": {}
+}

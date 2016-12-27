@@ -1,6 +1,12 @@
 import EventEmitter from 'eventemitter3';
+import diagnostics from 'diagnostics';
 import Character from './character';
 import TickTock from 'tick-tock';
+
+//
+// Setup our debug utility.
+//
+const debug = diagnostics('destiny-api:model:characters');
 
 /**
  * Representation of your Bungie account.
@@ -100,11 +106,13 @@ export default class Account extends EventEmitter {
     });
 
     //
-    // Make sure that
+    // Make sure that we correctly sort the chars on activity.
     //
     this.characters.sort(function sort(a, b) {
       return +a.played < +b.played;
     });
+
+    this.emit('update', data);
   }
 
   /**

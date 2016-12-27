@@ -1,3 +1,10 @@
+import diagnostics from 'diagnostics';
+
+//
+// Setup our debug utility.
+//
+const debug = diagnostics('destiny-api:api:characters');
+
 /**
  * API endpoint to manipulate and interact with your destiny character.
  *
@@ -23,7 +30,7 @@ export default class Character {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Advisors/V2/',
       filter: 'data',
-      format: {
+      template: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id,
         characterId: char
@@ -44,7 +51,7 @@ export default class Character {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Activities/',
       filter: 'data',
-      format: {
+      template: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id,
         characterId: char
@@ -64,7 +71,7 @@ export default class Character {
   inventory(platform, id, char, fn) {
     return this.destiny.send({
       url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Inventory/Summary/',
-      format: {
+      template: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id,
         characterId: char
@@ -84,7 +91,7 @@ export default class Character {
   history(platform, id, char, fn) {
     return this.destiny.send({
       url: 'Destiny/Stats/ActivityHistory/{membershipType}/{destinyMembershipId}/{characterId}/',
-      format: {
+      template: {
         membershipType: this.destiny.console(platform),
         destinyMembershipId: id,
         characterId: char

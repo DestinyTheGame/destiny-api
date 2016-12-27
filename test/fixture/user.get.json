@@ -1,0 +1,55 @@
+{
+  "Response": {
+    "user": {
+      "membershipId": "13469792",
+      "uniqueName": "13469792",
+      "displayName": "UVXlll",
+      "profilePicture": 70685,
+      "profileTheme": 93,
+      "userTitle": 0,
+      "successMessageFlags": "0",
+      "isDeleted": false,
+      "about": "",
+      "firstAccess": "2016-06-25T14:09:44.511Z",
+      "lastUpdate": "2016-09-17T21:05:15.657Z",
+      "context": {
+        "isFollowing": false,
+        "ignoreStatus": {
+          "isIgnored": false,
+          "ignoreFlags": 0
+        }
+      },
+      "psnDisplayName": "UVXlll",
+      "showActivity": false,
+      "locale": "en",
+      "localeInheritDefault": true,
+      "showGroupMessaging": true,
+      "profilePicturePath": "/img/profile/avatars/cc57.jpg",
+      "profileThemeName": "bungie_day15_02",
+      "userTitleDisplay": "Newbie",
+      "statusText": "Alt of i3rdEden - twitch/3rdEden - PVP",
+      "statusDate": "2016-09-17T21:05:15.657Z"
+    },
+    "emailStatus": 0,
+    "emailUsage": "0",
+    "psnId": "UVXlll",
+    "userAcls": [],
+    "showGamertagPublic": false,
+    "showFacebookPublic": false,
+    "showPsnPublic": true,
+    "publicCredentialTypes": [
+      2
+    ],
+    "isThemeLight": true,
+    "adultMode": false,
+    "userResearchStatusFlags": "1",
+    "privacy": 0,
+    "hideDestinyData": false,
+    "pmToastsEnabled": true
+  },
+  "ErrorCode": 1,
+  "ThrottleSeconds": 0,
+  "ErrorStatus": "Success",
+  "Message": "Ok",
+  "MessageData": {}
+}

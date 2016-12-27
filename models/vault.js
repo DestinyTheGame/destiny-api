@@ -1,6 +1,12 @@
 import EventEmitter from 'eventemitter3';
+import diagnostics from 'diagnostics';
 import series from 'async/series';
 import ms from 'millisecond';
+
+//
+// Setup our debug utility.
+//
+const debug = diagnostics('destiny-api:model:vault');
 
 /**
  * The great vault of
