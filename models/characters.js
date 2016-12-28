@@ -43,9 +43,11 @@ export default class Account extends EventEmitter {
     //
     if (!platform || !id) return;
 
+    debug('about to refresh internal characters');
     user.account(platform, id, (err, data) => {
       if (err) return this.emit('error', err);
 
+      debug('received refresh, updating internal characters');
       this.set(data);
     });
   }
@@ -90,18 +92,25 @@ export default class Account extends EventEmitter {
    * @public
    */
   set(data) {
+    if ('object' !== typeof data || !Array.isArray(data.characters)) {
+      return debug('received invalid data structure, not updating chars');
+    }
+
     data.characters.forEach((data) => {
       const base = data.characterBase;
-      const character = this.find(base.characterId);
+      const id = base.characterId;
+      const character = this.find(id);
 
       //
       // A new character got created or this is the first time that we actually
       // created characters. So add them to our internal array.
       //
       if (!character) {
+        debug('no previous character found for id %s, creating a new', id);
         return this.characters.push(new Character(this.destiny, base));
       }
 
+      debug('found a previous character %s updating its data', id);
       character.set(base);
     });
 
