@@ -24,7 +24,8 @@
     "millisecond": "0.1.x",
     "modification": "1.0.x",
     "propget": "1.0.x",
-    "tick-tock": "1.0.0",
+    "queueback": "1.1.x",
+    "tick-tock": "1.0.x",
     "url-parse": "1.1.x"
   },
   "devDependencies": {
