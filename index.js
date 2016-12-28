@@ -3,6 +3,7 @@ import modification from 'modification';
 import diagnostics from 'diagnostics';
 import series from 'async/series';
 import failure from 'failure';
+import Queue from 'queueback';
 import URL from 'url-parse';
 import prop from 'propget';
 import emits from 'emits';
@@ -50,7 +51,6 @@ export default class Destiny extends EventEmitter {
 
     this.api = 'https://www.bungie.net/Platform/';
 
-    this.characters = new Characters(this);   // Available characters.
     this.timeout = 30000;                     // API timeout.
     this.platform = '';                       // Console that is used.
     this.username = '';                       // Bungie username.
@@ -62,7 +62,9 @@ export default class Destiny extends EventEmitter {
     // These properties should NOT be overridden by the supplied options object.
     //
     this.bungie = bungie;
+    this.queue = new Queue();
     this.readystate = Destiny.CLOSED;
+    this.characters = new Characters(this);
     this.XHR = options.XHR || global.XMLHttpRequest;
 
     this.initialize();
@@ -209,7 +211,6 @@ export default class Destiny extends EventEmitter {
     //
     // Setup the XHR request with the correct formatted URL.
     //
-    const xhr = new this.XHR();
     const template = options.template || {};
     const using = Object.assign({ method: 'GET' }, options || {});
     const url =  this.format(using.url, Object.assign({
@@ -218,12 +219,26 @@ export default class Destiny extends EventEmitter {
       membershipType: template.membershipType || this.console()
     }, template));
 
-    xhr.open(using.method, url.href, true);
+    //
+    // Small but really important optimization: For GET requests the last thing
+    // we want to do is to make API calls that we've just send and are being
+    // processed as we speak. We have no idea where the consumer is making API
+    // calls from so it can be that they are asking for the same data from
+    // multiple locations in their code. We want to group these API requests.
+    //
+    const method = using.method;
+    const href = url.href;
+
+    if (this.queue.add(method, href, fn)) return;
+
+    const xhr = new this.XHR();
+
+    xhr.open(method, href, true);
     xhr.timeout = this.timeout;
 
     xhr.onload = () => {
       if (xhr.status !== 200) {
-        return fn(failure('There seems to be problem with the Bungie API', {
+        return this.queue.run(method, href, failure('There seems to be problem with the Bungie API', {
           code: xhr.status,
           action: 'retry',
           text: xhr.text,
@@ -236,7 +251,7 @@ export default class Destiny extends EventEmitter {
 
       try { data = JSON.parse(data); }
       catch (e) {
-        return fn(failure('Unable to parse the JSON response from the Bungie API', {
+        return this.queue.run(method, href, failure('Unable to parse the JSON response from the Bungie API', {
           code: xhr.status,
           text: xhr.text,
           action: 'rety',
@@ -257,6 +272,7 @@ export default class Destiny extends EventEmitter {
         // we're allowed to request again.
         //
         if (data.ErrorCode === 36) {
+          this.queue.remove(method, href, fn);
           debug('reached throttle limit, rescheduling API call');
           return setTimeout(send.bind(this, options, fn), 1000 * data.ThrottleSeconds);
         }
@@ -266,15 +282,15 @@ export default class Destiny extends EventEmitter {
         // should fail hard and return a new error object.
         //
         debug('received an error from the api: %s', data.Message);
-        return fn(failure(data.Message, data));
+        return this.queue.run(method, url, failure(data.Message, data));
       }
 
       //
       // Check if we need filter the data down using our filter property.
       //
-      if (!using.filter) return fn(undefined, data.Response);
+      if (!using.filter) return this.queue.run(method, url, undefined, data.Response);
 
-      fn(undefined, prop(data.Response, using.filter));
+      this.queue.run(method, url, undefined, prop(data.Response, using.filter));
     };
 
     //
@@ -284,7 +300,7 @@ export default class Destiny extends EventEmitter {
     this.bungie.token((err, payload) => {
       if (err) {
         debug('failed to retreive an accessToken: %s', err.message);
-        return fn(err);
+        return this.queue.run(method, url, err);
       }
 
       xhr.setRequestHeader('X-API-Key', this.bungie.config.key);
