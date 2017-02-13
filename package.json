@@ -33,7 +33,7 @@
     "babel-ignore": "2.0.1",
     "babel-register": "6.18.x",
     "mocha": "3.2.x",
-    "nock": "9.0.x",
+    "nock": "~9.0.6",
     "nock-knock": "1.0.x",
     "pre-commit": "1.2.x",
     "xmlhttprequest": "1.8.x"
