@@ -29,10 +29,12 @@ const debug = diagnostics('destiny-api');
  *
  * Options:
  *
- * - api:       Location of the API server that we're requesting.
- * - platform:  Platform (console) that we're using.
- * - username:  Username of your account.
- * - timeout:   Maximum request timeout.
+ * - api:           Location of the API server that we're requesting.
+ * - platform:      Platform (console) that we're using.
+ * - username:      Username of your account.
+ * - timeout:       Maximum request timeout.
+ * - definitions:   Include definitions.
+ * - language:      Language the API should return.
  *
  * @constructor
  * @param {Bungie} bungie The bungie-auth instance.
@@ -55,6 +57,8 @@ export default class Destiny extends EventEmitter {
     this.platform = '';                       // Console that is used.
     this.username = '';                       // Bungie username.
     this.id = '';                             // Bungie membership id.
+    this.definitions = true;                  // Fetch definition info from API.
+    this.language = 'en';                     // Language.
 
     this.change(options);
 
@@ -220,6 +224,15 @@ export default class Destiny extends EventEmitter {
     }, template));
 
     //
+    // See if we need to introduce any addition query strings.
+    //
+    const query = url.query;
+
+    if (this.language) query.lc = this.language;
+    if (this.definitions === true) query.definitions = true;
+    if (Object.keys(query).length) url.set('query', query);
+
+    //
     // Small but really important optimization: For GET requests the last thing
     // we want to do is to make API calls that we've just send and are being
     // processed as we speak. We have no idea where the consumer is making API
@@ -334,7 +347,7 @@ export default class Destiny extends EventEmitter {
       api = api.replace(new RegExp('{'+ prop +'}','g'), data[prop]);
     }
 
-    const url = new URL(api);
+    const url = new URL(api, true);
 
     //
     // Final check, we need to make sure that the pathname has a leading slash
