@@ -1,6 +1,6 @@
 {
   "name": "destiny-api",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Destiny API through bungie.net",
   "main": "index.js",
   "scripts": {
