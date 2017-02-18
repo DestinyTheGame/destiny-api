@@ -90,17 +90,19 @@ export default class User {
   }
 
   /**
-   * Loads a bungie.net user by membership id.
+   * Loads a bungie.net user.
    *
-   * @param {String} membershipId membershipId of the users we're looking for.
+   * @param {String|Number} platform The platform type.
+   * @param {String} username Username we want to lookup.
    * @param {Function} fn Completion callback.
    * @public
    */
-  search(username, fn) {
+  search(platform, username, fn) {
     return this.destiny.send({
-      url: 'User/SearchUsers/?q={search}',
+      url: 'Destiny/SearchDestinyPlayer/{membershipType}/{displayName}',
       template: {
-        search: username
+        membershipType: this.destiny.console(platform),
+        displayName: username
       }
     }, fn);
   }
