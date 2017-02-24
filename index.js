@@ -215,22 +215,8 @@ export default class Destiny extends EventEmitter {
     //
     // Setup the XHR request with the correct formatted URL.
     //
-    const template = options.template || {};
-    const using = Object.assign({ method: 'GET' }, options || {});
-    const url =  this.format(using.url, Object.assign({
-      displayName: template.displayName || this.username,
-      destinyMembershipId: template.destinyMembershipId || this.id,
-      membershipType: template.membershipType || this.console()
-    }, template));
-
-    //
-    // See if we need to introduce any addition query strings.
-    //
-    const query = url.query;
-
-    if (this.language) query.lc = this.language;
-    if (this.definitions === true) query.definitions = true;
-    if (Object.keys(query).length) url.set('query', query);
+    const using = Object.assign({ method: 'GET' }, options);
+    const url =  options.url;
 
     //
     // Small but really important optimization: For GET requests the last thing
@@ -279,7 +265,7 @@ export default class Destiny extends EventEmitter {
       // going to assume that 0 and 1 are both valid values.
       //
       if (data.ErrorCode > 1) {
-        debug('we received an error code (%s) from the bungie api for %s', data.ErrorCode, url.href);
+        debug('we received an error code (%s) from the bungie api for %s', data.ErrorCode, href);
         //
         // We've reached the throttle limit, so we should defer the request until
         // we're allowed to request again.
@@ -320,7 +306,7 @@ export default class Destiny extends EventEmitter {
       xhr.setRequestHeader('x-requested-with', 'XMLHttpRequest');
       xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
 
-      debug('send API request to %s', url.href);
+      debug('send API request to %s', href);
       xhr.send(using.body);
     });
 
@@ -328,23 +314,53 @@ export default class Destiny extends EventEmitter {
   }
 
   /**
-   * Simple yet effective URL formatter.
+   * Argument parser that helps with the generation of the API endpoint URL as
+   * well as handling of options can callbacks. We assume that the arg object
+   * contains the following keys:
    *
-   * @param {String|Array} endpoint The API endpoint that we're trying to hit.
-   * @param {Object} data Additional data that needs to be transformed.
-   * @returns {URL} Created URL instance.
+   * - endpoint: URL we need to hit
+   * - options: Optional object to configure the URL.
+   * - template: Variables used to process the given URL.
+   * - fn: Completion callback for the URL.
+   *
+   * @param {Object} arg The arg object.
+   * @returns {Object} Callback and resulting URL
    * @api public
    */
-  format(endpoint, data) {
+  args(arg) {
+    let { endpoint, options, callback, template } = arg;
+
+    //
+    // Support multiple forms of API structuring. For complex URL's it might
+    // make sense to chop them up in Array's so we'lll merge them back here.
+    //
     endpoint = Array.isArray(endpoint) ? endpoint.join('/') : endpoint;
 
     //
-    // Replace our template or "place holders" with our supplied data.
+    // We want to make sure that certain information is always filled in with
+    // the information of the user we've authenticated with.
+    //
+    template = Object.assign({
+      displayName: this.username,
+      destinyMembershipId: this.id,
+      membershipType: this.console()
+    }, template);
+
+    //
+    // Process our options and callback to see if they we have any OPTIONAL
+    // options or if we need to fix our callback.
+    //
+    if (typeof options === 'function') {
+      callback = options;
+      options = {};
+    }
+
+    //
+    // Process the template variables to create a full API endpoint.
     //
     let api = this.api + endpoint;
-
-    for(let prop in data) {
-      api = api.replace(new RegExp('{'+ prop +'}','g'), data[prop]);
+    for(let prop in template) {
+      api = api.replace(new RegExp('{'+ prop +'}','g'), template[prop]);
     }
 
     const url = new URL(api, true);
@@ -357,8 +373,28 @@ export default class Destiny extends EventEmitter {
     if (url.pathname.charAt(url.pathname.length - 1) !== '/') {
       url.set('pathname', url.pathname + '/');
     }
+    //
+    // Introduce query string params to the API, we'll leverage the build-in
+    // query string functionality of the URL instance to transform our object in
+    // something human readable.
+    //
+    const query = {};
 
-    return url;
+    if (this.language) query.lc = this.language;
+    if (this.definitions === true) query.definitions = true;
+
+    //
+    // Process all available options.
+    //
+    if (options.summary) url.set('pathname', url.pathname + 'Summary/');
+    if (options.mode) query.mode = options.mode;
+
+    url.set('query', query);
+
+    return {
+      fn: callback,
+      url: url,
+    };
   }
 
   /**
@@ -372,6 +408,7 @@ export default class Destiny extends EventEmitter {
    */
   console(platform, apiname) {
     if (!platform) platform = this.platform;
+
     if ('number' !== typeof platform) {
       if (~platform.toString().toLowerCase().indexOf('xb')) platform = 1;
       else platform = 2;
