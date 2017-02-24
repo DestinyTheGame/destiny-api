@@ -14,7 +14,7 @@ const debug = diagnostics('destiny-api:api:characters');
  */
 export default class Character {
   constructor(destiny) {
-    this.destiny = destiny;
+    this.api = destiny;
   }
 
   /**
@@ -23,18 +23,26 @@ export default class Character {
    * @param {String|Number} platform The platform type.
    * @param {String} id Destiny id
    * @param {string} char Character id.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  advisors(platform, id, char, fn) {
-    return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Advisors/V2/',
-      filter: 'data',
+  advisors(platform, id, char, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Advisors/V2/',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         destinyMembershipId: id,
         characterId: char
       }
+    });
+
+    return this.api.send({
+      url: url,
+      filter: 'data'
     }, fn);
   }
 
@@ -44,18 +52,26 @@ export default class Character {
    * @param {String|Number} platform The platform type.
    * @param {String} id Destiny id
    * @param {string} char Character id.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  activities(platform, id, char, fn) {
-    return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Activities/',
-      filter: 'data',
+  activities(platform, id, char, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Activities/',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         destinyMembershipId: id,
         characterId: char
       }
+    });
+
+    return this.api.send({
+      url: url,
+      filter: 'data',
     }, fn);
   }
 
@@ -65,17 +81,25 @@ export default class Character {
    * @param {String|Number} platform The platform type.
    * @param {String} id Destiny id
    * @param {string} char Character id.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  inventory(platform, id, char, fn) {
-    return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Inventory/Summary/',
+  inventory(platform, id, char, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Character/{characterId}/Inventory/',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         destinyMembershipId: id,
         characterId: char
       }
+    });
+
+    return this.api.send({
+      url: url
     }, fn);
   }
 
@@ -85,17 +109,25 @@ export default class Character {
    * @param {String|Number} platform The platform type.
    * @param {String} id Destiny id
    * @param {string} char Character id.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  history(platform, id, char, fn) {
-    return this.destiny.send({
-      url: 'Destiny/Stats/ActivityHistory/{membershipType}/{destinyMembershipId}/{characterId}/',
+  history(platform, id, char, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/Stats/ActivityHistory/{membershipType}/{destinyMembershipId}/{characterId}/',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         destinyMembershipId: id,
         characterId: char
       }
+    });
+
+    return this.api.send({
+      url: url
     }, fn);
   }
 }

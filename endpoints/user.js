@@ -14,19 +14,27 @@ const debug = diagnostics('destiny-api:api:characters');
  */
 export default class User {
   constructor(destiny) {
-    this.destiny = destiny;
+    this.api = destiny;
   }
 
   /**
    * Fetch the user details.
    *
-   * @param {Function} fn Completion callback
-   * @returns {Destiny} Original API.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback
+   * @returns {Destiny} API instance.
    * @public
    */
-  get(fn) {
-    return this.destiny.send({
-      url: 'User/GetBungieNetUser/',
+  get(options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'User/GetBungieNetUser/',
+      callback: callback,
+      options: options,
+      template: {}
+    });
+
+    return this.api.send({
+      url: url,
       bypass: true
     }, (err, data) => {
       if (err || !data) {
@@ -38,12 +46,12 @@ export default class User {
       // user information for the given API key as the API key here is leading.
       //
       if (data.psnId) {
-        this.destiny.change({
+        this.api.change({
           username: data.user.displayName,
           platform: 'PlayStation'
         });
       } else if (data.gamerTag) {
-        this.destiny.change({
+        this.api.change({
           username: data.user.displayName,
           platform: 'Xbox'
         });
@@ -56,36 +64,66 @@ export default class User {
   /**
    * Fetch list of available avatars for user.
    *
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  avatars() {
-    return this.destiny.send({ url: 'User/GetAvailableAvatars/' }, fn);
+  avatars(options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'User/GetAvailableAvatars/',
+      callback: callback,
+      options: options,
+      template: {}
+    });
+
+    return this.api.send({
+      url: url
+    }, fn);
   }
 
   /**
    * Fetch list of available themes for user.
    *
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  themes() {
-    return this.destiny.send({ url: 'User/GetAvailableThemes/' }, fn);
+  themes(options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'User/GetAvailableThemes/',
+      callback: callback,
+      options: options,
+      template: {}
+    });
+
+    return this.api.send({
+      url: url
+    }, fn);
   }
 
   /**
    * Loads a bungie.net user by membership id.
    *
    * @param {String} membershipId membershipId of the users we're looking for.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  id(membershipId) {
-    return this.destiny.send({
-      url: 'User/GetBungieNetUserById/{id}/',
+  id(membershipId, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'User/GetBungieNetUserById/{id}/',
+      callback: callback,
+      options: options,
       template: {
         id: membershipId
       }
+    });
+
+    return this.api.send({
+      url: url
     }, fn);
   }
 
@@ -94,16 +132,24 @@ export default class User {
    *
    * @param {String|Number} platform The platform type.
    * @param {String} username Username we want to lookup.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  search(platform, username, fn) {
-    return this.destiny.send({
-      url: 'Destiny/SearchDestinyPlayer/{membershipType}/{displayName}',
+  search(platform, username, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/SearchDestinyPlayer/{membershipType}/{displayName}',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         displayName: username
       }
+    });
+
+    return this.api.send({
+      url: url
     }, fn);
   }
 
@@ -112,17 +158,25 @@ export default class User {
    *
    * @param {String|Number} platform The platform type.
    * @param {String} username Username we want to lookup.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  membership(platform, username, fn) {
-    return this.destiny.send({
-      url: 'Destiny/{membershipType}/Stats/GetMembershipIdByDisplayName/{displayName}/',
-      bypass: true,
+  membership(platform, username, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/{membershipType}/Stats/GetMembershipIdByDisplayName/{displayName}/',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         displayName: username
       }
+    });
+
+    return this.api.send({
+      url: url,
+      bypass: true,
     }, fn);
   }
 
@@ -131,18 +185,26 @@ export default class User {
    *
    * @param {String|Number} platform The platform type.
    * @param {String} id Account id.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  account(platform, id, fn) {
-    return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Summary/',
-      bypass: true,
-      filter: 'data',
+  account(platform, id, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Summary/',
+      callback: callback,
+      options: options,
       template: {
-        membershipType: this.destiny.console(platform),
+        membershipType: this.api.console(platform),
         destinyMembershipId: id
       }
+    });
+
+    return this.api.send({
+      url: url,
+      bypass: true,
+      filter: 'data'
     }, fn);
   }
 
@@ -151,16 +213,24 @@ export default class User {
    *
    * @param {String|Number} platform The platform type.
    * @param {String} id Account id.
-   * @param {Function} fn Completion callback.
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback.
+   * @returns {Destiny} API instance.
    * @public
    */
-  advisors(platform, id, fn) {
-    return this.destiny.send({
-      url: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Advisors/',
+  advisors(platform, id, options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'Destiny/{membershipType}/Account/{destinyMembershipId}/Advisors/',
+      callback: callback,
+      options: options,
       template: {
-        destinyMembershipType: this.destiny.console(platform, true),
+        destinyMembershipType: this.api.console(platform, true),
         destinyMembershipId: id
       }
+    });
+
+    return this.api.send({
+      url: url
     }, fn);
   }
 }
