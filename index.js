@@ -83,6 +83,8 @@ export default class Destiny extends EventEmitter {
     debug('initializing API');
 
     this.on('refresh', function reset(hard) {
+      this.characters.destroy();
+
       this.change({
         characters: new Characters(this),
         platform: '',
