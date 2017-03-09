@@ -26,6 +26,8 @@ export default class Account extends EventEmitter {
     this.timers.setInterval('refresh', () => {
       this.refresh();
     }, 10000);
+
+    this.on('error', debug);
   }
 
   /**
