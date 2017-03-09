@@ -228,7 +228,9 @@ export default class Destiny extends EventEmitter {
     const method = using.method;
     const href = url.href;
 
-    if (this.queue.add(method, href, fn)) return;
+    if (this.queue.add(method, href, fn)) {
+      return debug('request already queued, ignoring '+ href);
+    }
 
     const xhr = new this.XHR();
 
@@ -236,7 +238,11 @@ export default class Destiny extends EventEmitter {
     xhr.timeout = this.timeout;
 
     xhr.onload = () => {
+      let data = xhr.response || xhr.responseText;
+
       if (xhr.status !== 200) {
+        debug('Received an invalid status code from the Bungie server', data);
+
         return this.queue.run(method, href, failure('There seems to be problem with the Bungie API', {
           code: xhr.status,
           action: 'retry',
@@ -245,11 +251,10 @@ export default class Destiny extends EventEmitter {
           body: ''
         }));
       }
-
-      let data = xhr.response || xhr.responseText;
-
       try { data = JSON.parse(data); }
       catch (e) {
+        debug('Unable to parse response from Bungie API server', data);
+
         return this.queue.run(method, href, failure('Unable to parse the JSON response from the Bungie API', {
           code: xhr.status,
           text: xhr.text,
