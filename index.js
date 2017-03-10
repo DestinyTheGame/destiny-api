@@ -253,6 +253,7 @@ export default class Destiny extends EventEmitter {
           body: ''
         }));
       }
+
       try { data = JSON.parse(data); }
       catch (e) {
         debug('Unable to parse response from Bungie API server', data);
@@ -288,15 +289,15 @@ export default class Destiny extends EventEmitter {
         // should fail hard and return a new error object.
         //
         debug('received an error from the api: %s', data.Message);
-        return this.queue.run(method, url, failure(data.Message, data));
+        return this.queue.run(method, href, failure(data.Message, data));
       }
 
       //
       // Check if we need filter the data down using our filter property.
       //
-      if (!using.filter) return this.queue.run(method, url, undefined, data.Response);
+      if (!using.filter) return this.queue.run(method, herf, undefined, data.Response);
 
-      this.queue.run(method, url, undefined, prop(data.Response, using.filter));
+      this.queue.run(method, href, undefined, prop(data.Response, using.filter));
     };
 
     //
@@ -306,7 +307,7 @@ export default class Destiny extends EventEmitter {
     this.bungie.token((err, payload) => {
       if (err) {
         debug('failed to retreive an accessToken: %s', err.message);
-        return this.queue.run(method, url, err);
+        return this.queue.run(method, href, err);
       }
 
       xhr.setRequestHeader('X-API-Key', this.bungie.config.key);
