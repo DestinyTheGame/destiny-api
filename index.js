@@ -295,7 +295,7 @@ export default class Destiny extends EventEmitter {
       //
       // Check if we need filter the data down using our filter property.
       //
-      if (!using.filter) return this.queue.run(method, herf, undefined, data.Response);
+      if (!using.filter) return this.queue.run(method, href, undefined, data.Response);
 
       this.queue.run(method, href, undefined, prop(data.Response, using.filter));
     };
