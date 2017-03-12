@@ -2,9 +2,11 @@ import EventEmitter from 'eventemitter3';
 import modification from 'modification';
 import diagnostics from 'diagnostics';
 import series from 'async/series';
+import TickTock from 'tick-tock';
 import failure from 'failure';
 import Queue from 'queueback';
 import URL from 'url-parse';
+import once from 'one-time';
 import prop from 'propget';
 import emits from 'emits';
 
@@ -67,6 +69,7 @@ export default class Destiny extends EventEmitter {
     //
     this.bungie = bungie;
     this.queue = new Queue();
+    this.timers = new TickTock();
     this.readystate = Destiny.CLOSED;
     this.characters = new Characters(this);
     this.XHR = options.XHR || global.XMLHttpRequest;
@@ -191,11 +194,11 @@ export default class Destiny extends EventEmitter {
    * Send a request over the API.
    *
    * @param {Object} options The request options.
-   * @param {Function} fn Completion callback.
+   * @param {Function} next Completion callback.
    * @returns {Destiny}
    * @api public
    */
-  send(options, fn) {
+  send(options, next) {
     //
     // Check if we're allowed to make these http requests yet or if they require
     // login or additional account information.
@@ -204,13 +207,13 @@ export default class Destiny extends EventEmitter {
       debug('queue api call for %s, readyState is not yet complete', options.url);
 
       return this.once('refreshed', function refreshed(err) {
-        if (err) return fn(err);
+        if (err) return next(err);
 
         //
         // Re-call the `send` method so we can process this outgoing HTTP request
         // as all information has been gathered from the required API endpoints.
         //
-        this.send(options, fn);
+        this.send(options, next);
       });
     }
 
@@ -230,14 +233,29 @@ export default class Destiny extends EventEmitter {
     const method = using.method;
     const href = url.href;
 
+    //
+    // We want to have better control on how time-out's are handled so we've
+    // added our own setTimeout handlers. In order to prevent duplicate
+    // execution and be able to clear the timer we're wrapping the supplied
+    // callback.
+    //
+    const fn = once(() => {
+      this.timers.clear(href);
+
+      next(...arguments);
+    });
+
     if (this.queue.add(method, href, fn)) {
       return debug('request already queued, ignoring '+ href);
     }
 
     const xhr = new this.XHR();
-
     xhr.open(method, href, true);
-    xhr.timeout = this.timeout;
+
+    xhr.onerror = () => {
+      debug('Received an error event on the XHR instance', xhr.statusText, xhr.responseText);
+      fn(failure(xhr.statusText || 'Unknown error occured while making an API request'));
+    };
 
     xhr.onload = () => {
       let data = xhr.response || xhr.responseText;
@@ -279,9 +297,11 @@ export default class Destiny extends EventEmitter {
         // we're allowed to request again.
         //
         if (data.ErrorCode === 36) {
-          this.queue.remove(method, href, fn);
           debug('reached throttle limit, rescheduling API call');
-          return setTimeout(send.bind(this, options, fn), 1000 * data.ThrottleSeconds);
+          this.queue.remove(method, href, fn);
+          this.timers.clear(href);
+
+          return setTimeout(send.bind(this, options, next), 1000 * data.ThrottleSeconds);
         }
 
         //
@@ -315,6 +335,20 @@ export default class Destiny extends EventEmitter {
       xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
 
       debug('send API request to %s', href);
+
+      //
+      // Not all XHR implementations have timeout handling build in. So we have
+      // to implement this our selfs. So in this case we're going to register
+      // and setTimeout for each href that we process and clear it once our
+      // callback has been called.
+      //
+      this.timers.setTimeout(href, () => {
+        debug('failed to process %s in a timely manner, canceling call.', href);
+        fn(failure('API requested timed out'));
+
+        try { xhr.abort(); } catch (e) {}
+      }, this.timeout);
+
       xhr.send(using.body);
     });
 
