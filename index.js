@@ -100,7 +100,9 @@ export default class Destiny extends EventEmitter {
     // If there is an error we want to completely nuke all information.
     //
     this.on('error', this.emits('refresh', true));
-    this.on('error', debug);
+    this.on('error', (err) => {
+      debug('received an error %s', err.message, err.stack);
+    });
 
     this.refresh();
   }
@@ -239,10 +241,16 @@ export default class Destiny extends EventEmitter {
     // execution and be able to clear the timer we're wrapping the supplied
     // callback.
     //
-    const fn = once(() => {
+    const fn = once((...args) => {
       this.timers.clear(href);
-
-      next(...arguments);
+      //
+      // BUG: We have this bug where using ...arguments for spreading will
+      // actually somehow get the incorrect arguments, it takes the arguments of
+      // the parent scope instead of the one of this function. So we have to
+      // spread it as an other variable name, which we'll spread again on the
+      // next function.. So changing ...args to ...arguments breaks this.
+      //
+      next(...args);
     });
 
     if (this.queue.add(method, href, fn)) {
@@ -254,7 +262,7 @@ export default class Destiny extends EventEmitter {
 
     xhr.onerror = () => {
       debug('Received an error event on the XHR instance', xhr.statusText, xhr.responseText);
-      fn(failure(xhr.statusText || 'Unknown error occured while making an API request'));
+      this.queue.run(method, href, failure(xhr.statusText || 'Unknown error occured while making an API request'));
     };
 
     xhr.onload = () => {
@@ -344,7 +352,7 @@ export default class Destiny extends EventEmitter {
       //
       this.timers.setTimeout(href, () => {
         debug('failed to process %s in a timely manner, canceling call.', href);
-        fn(failure('API requested timed out'));
+        this.queue.run(method, href, failure('API requested timed out'));
 
         try { xhr.abort(); } catch (e) {}
       }, this.timeout);
