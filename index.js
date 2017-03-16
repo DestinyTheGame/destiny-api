@@ -53,14 +53,14 @@ export default class Destiny extends EventEmitter {
     this.change = modification('changed');
     this.emits = emits;
 
-    this.api = 'https://www.bungie.net/Platform/';
-
-    this.timeout = 30000;                     // API timeout.
-    this.platform = '';                       // Console that is used.
-    this.username = '';                       // Bungie username.
-    this.id = '';                             // Bungie membership id.
-    this.definitions = true;                  // Fetch definition info from API.
-    this.language = 'en';                     // Language.
+    this.api = 'https://www.bungie.net/Platform/';  // URL of the API server.
+    this.definitions = true;                        // Fetch definition info from API.
+    this.timeout = 30000;                           // API timeout.
+    this.language = 'en';                           // Language.
+    this.platform = '';                             // Console that is used.
+    this.username = '';                             // Bungie username.
+    this.key = '';                                  // Bungie API key.
+    this.id = '';                                   // Bungie membership id.
 
     this.change(options);
 
@@ -328,20 +328,14 @@ export default class Destiny extends EventEmitter {
       this.queue.run(method, href, undefined, prop(data.Response, using.filter));
     };
 
-    //
-    // Retrieve the token from our bungie-auth instance so we can access the
-    // secured API's
-    //
-    this.bungie.token((err, payload) => {
-      if (err) {
-        debug('failed to retreive an accessToken: %s', err.message);
-        return this.queue.run(method, href, err);
-      }
-
-      xhr.setRequestHeader('X-API-Key', this.bungie.config.key);
+    /**
+     * Send the actual HTTP request as everything is setup as intended.
+     *
+     * @private
+     */
+    const send = (key) => {
+      xhr.setRequestHeader('X-API-Key', key || this.key);
       xhr.setRequestHeader('x-requested-with', 'XMLHttpRequest');
-      xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
-
       debug('send API request to %s', href);
 
       //
@@ -358,6 +352,24 @@ export default class Destiny extends EventEmitter {
       }, this.timeout);
 
       xhr.send(using.body);
+    };
+
+    //
+    // Retrieve the token from our bungie-auth instance so we can access the
+    // secured API's
+    //
+    if (!this.bungie) send();
+    else this.bungie.token((err, payload) => {
+      if (err) {
+        debug('failed to retreive an accessToken: %s', err.message);
+        return this.queue.run(method, href, err);
+      }
+
+      //
+      // Setup the required.
+      //
+      xhr.setRequestHeader('Authorization', 'Bearer '+ payload.accessToken.value);
+      send(this.bungie.config.key);
     });
 
     return this;
