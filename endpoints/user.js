@@ -154,6 +154,27 @@ export default class User {
   }
 
   /**
+   * Find the current users bungie account details.
+   *
+   * @param {Object} options Optional configuration.
+   * @param {Function} callback Completion callback
+   * @returns {Destiny} API instance.
+   * @public
+   */
+  current(options, callback) {
+    const { url, fn } = this.api.args({
+      endpoint: 'User/GetCurrentBungieAccount/',
+      callback: callback,
+      options: options,
+    });
+
+    return this.api.send({
+      url: url,
+      bypass: true,
+    }, fn);
+  }
+
+  /**
    * For the users's Bungie membership id.
    *
    * @param {String|Number} platform The platform type.

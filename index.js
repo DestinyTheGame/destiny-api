@@ -135,12 +135,22 @@ export default class Destiny extends EventEmitter {
       readystate: (next) => {
         debug('searching for membership id');
 
-        this.user.membership(this.platform, this.username, (err, data) => {
+        this.user.current((err, data) => {
           if (err) return next(err);
 
-          this.change({
-            readystate: Destiny.COMPLETE,
-            id: data
+          const accounts = data.destinyAccounts;
+
+          if (!Array.isArray(accounts) || !accounts.length) {
+            return next(failure('No active bungie/destiny account found'));
+          }
+
+          accounts.forEach((account) => {
+            if (account.userInfo.membershipType !== this.console()) return;
+
+            this.change({
+              id: account.userInfo.membershipId,
+              readystate: Destiny.COMPLETE
+            });
           });
 
           next();
@@ -305,7 +315,7 @@ export default class Destiny extends EventEmitter {
         // we're allowed to request again.
         //
         if (data.ErrorCode === 36) {
-          debug('reached throttle limit, rescheduling API call');
+          debug('reached throttle limit, rescheduling API call', href);
           this.queue.remove(method, href, fn);
           this.timers.clear(href);
 
@@ -316,7 +326,7 @@ export default class Destiny extends EventEmitter {
         // At this point we don't really know what kind of error we received so we
         // should fail hard and return a new error object.
         //
-        debug('received an error from the api: %s', data.Message);
+        debug('received an error from the api: %s', data.Message, href);
         return this.queue.run(method, href, failure(data.Message, data));
       }
 
